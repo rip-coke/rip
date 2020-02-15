@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <nav class="navbar sticky-top navbar-light bg-light d-flex justify-content-between">
+      <a style="padding-left: 120px; " class="navbar-brand" href="#">
+        <img style="width: 50px; height: 50px" src="/assets/header.png">
+        <%image_tag "header.png", size: "50x50"%>
+        Death Notices
+      </a>
+      <button class="btn btn-dark my-2 my-sm-0" style="margin-right: 120px" type="submit">Sign in</button>
+    </nav>
     <%= yield %>
   </body>
 </html>
