@@ -13,10 +13,15 @@
     <nav class="navbar sticky-top navbar-light bg-light d-flex justify-content-between">
       <a style="padding-left: 120px; " class="navbar-brand" href="#">
         <img style="width: 50px; height: 50px" src="/assets/header.png">
-        <%image_tag "header.png", size: "50x50"%>
+        <% image_tag "header.png", size: "50x50" %>
         Death Notices
       </a>
-      <button class="btn btn-dark my-2 my-sm-0" style="margin-right: 120px" type="submit">Sign in</button>
+      <% if user_signed_in? %>
+        <%= button_to 'New notice', new_post_url, method: :create, class: "btn btn-dark my-2 my-sm-0", style: "margin-right: 120px" %>        
+        <%= button_to 'Sign out', destroy_user_session_path, method: :delete, class: "btn btn-dark my-2 my-sm-0", style: "margin-right: 120px" %>
+      <% else %>
+        <%= button_to 'Sign in', user_session_path, method: :create, class: "btn btn-dark my-2 my-sm-0", style: "margin-right: 120px" %>        
+      <% end %>
     </nav>
     <%= yield %>
   </body>
