@@ -5,6 +5,7 @@ layout: default
 
 {% for notice in site.notices %}
   <article class="flex flex-col items-start justify-between pt-3">
+    <a href="{{ notice.url }}">
       <div class="relative w-full">
           <img src="{{notice.pic}}" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
           <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
@@ -24,5 +25,7 @@ layout: default
           </p>
         </div>
       </div>
-    </article>
+    </a>
+  </article>
 {% endfor %}
+
