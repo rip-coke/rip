@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-{{site.notices}}
 {% for notice in site.notices %}
   <article class="flex flex-col items-start justify-between pt-3">
     <a href="{{ notice.url }}">
