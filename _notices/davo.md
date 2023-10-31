@@ -1,10 +1,3 @@
-[davo.png]David Karithi
-1960 - 2023
-
-
-Wueh 
-
-
 ---
 name: three
 dob: Mar 1960
