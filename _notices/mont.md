@@ -1,2 +1,0 @@
-[mont.png]
-sdafasdf
