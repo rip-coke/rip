@@ -1,1 +1,0 @@
-sdafdasf[oaa.png]

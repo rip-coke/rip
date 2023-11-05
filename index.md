@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-{% assign notices = site.notices | sort: 'dod' | reverse %}
+
+{% assign notices = site.notices | sort_natural | reverse %}
 {% for notice in notices %}
   <article class="flex flex-col items-start justify-between pt-3">
     <a href="{{ notice.url }}">
@@ -12,9 +13,9 @@ layout: default
       <div class="max-w-xl">
         <div class="mt-8 flex items-center gap-x-4 text-s">
           <div class="flex-auto">
-            <time datetime="2020-03" class="text-gray-500">{{notice.dob}}</time>
+            <time datetime="2020-03" class="text-gray-500">{{notice.dob | date: "%d %b %y"}}</time>
             -
-            <time datetime="2020-03" class="text-gray-500">{{notice.dod}}</time>
+            <time datetime="2020-03" class="text-gray-500">{{notice.dod | date: "%d %b %y"}}</time>
           </div>
           <span class="flex-auto">{{notice.name}}</span>
         </div>
@@ -27,4 +28,25 @@ layout: default
     </a>
   </article>
 {% endfor %}
+
+{{paginator.previous_page_path}}
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
 
