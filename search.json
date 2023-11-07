@@ -1,0 +1,15 @@
+---
+---
+[
+  {% for post in site.notices %}
+    {
+
+      "title"   : "{{ post.name | escape }}",
+      "url"     : "{{ site.baseurl }}{{ post.url }}",
+      "dod"     : "{{ post.dod }}",
+      "dob"     : "{{ post.dob }}",
+      "desc"    : "{{ post.name | escape }} : {{ post.dob }} - {{ post.dod }}"
+
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
