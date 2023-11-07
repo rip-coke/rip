@@ -1,7 +1,7 @@
 ---
 name: three
-dob: Mar 2000
-dod: 2010-07-12
+dob: 2020-09-10
+dod: 2020-09-10
 pic: "https://upload.wikimedia.org/wikipedia/commons/d/d8/Paula-Molina.jpg"
 layout: post
 ---

@@ -1,7 +1,7 @@
 ---
 name: Kijana Mmoja
-dob: May 1955
-dod: Sep 2023
+dob: 2020-09-10
+dod: 1988-11-10
 pic: "/assets/images/kijana.jpg"
 layout: post
 ---

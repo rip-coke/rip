@@ -10,9 +10,9 @@ layout: default
 <span class="flex-auto">{{page.name}}</span>
 <div class="flex items-center gap-x-4 text-s">
   <div class="flex-auto">
-    <time datetime="2020-03" class="text-gray-500">{{page.dob}}</time>
+    <time datetime="2020-03" class="text-gray-500">{{page.dob | date: "%d %b %y" }}</time>
     -
-    <time datetime="2020-03" class="text-gray-500">{{page.dod}}</time>
+    <time datetime="2020-03" class="text-gray-500">{{page.dod | date: "%d %b %y" }}</time>
   </div>
   <span class="flex-auto">{{page.county}}</span>
 </div>

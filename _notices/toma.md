@@ -1,7 +1,7 @@
 ---
 name: Toma
-dob: May 1960
-dod: Oct 2023
+dob: 2020-09-10
+dod: 2020-09-10
 pic: "/assets/images/toma.png"
 layout: post
 ---

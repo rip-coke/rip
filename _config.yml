@@ -46,8 +46,8 @@ pagination:
   #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
   title: ':name - page :num'
   limit: 0
-  # sort_field: 'dod'
-  # sort_reverse: true
+  sort_field: 'dod'
+  sort_reverse: true
   # category: 'notic'
   # tag: 'notice'
   # locale: 'en_GB'

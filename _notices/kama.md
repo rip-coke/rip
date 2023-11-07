@@ -1,7 +1,7 @@
 ---
 name: kama
-dob: Mar 1955
-dod: Oct 2023
+dob: 1955-11-10
+dod: 2020-09-10
 pic: "/assets/images/kama.png"
 layout: post
 ---

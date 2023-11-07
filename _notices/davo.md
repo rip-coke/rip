@@ -1,7 +1,7 @@
 ---
 name: three
-dob: Mar 1960
-dod: Mar 2023
+dob: 1960-11-10
+dod: 2020-09-10
 pic: "/assets/images/davo.png"
 layout: post
 ---
