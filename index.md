@@ -1,10 +1,12 @@
 ---
 layout: default
+pagination:
+  enabled: true
 ---
 
 {% assign notices = site.notices | sort_natural | reverse %}
-{% for notice in notices %}
-  <article class="flex flex-col items-start justify-between pt-3">
+{% for notice in paginator.posts %}
+  <article class="flex flex-col items-start justify-between pt-3 break-after-column">
     <a href="{{ notice.url }}">
       <div class="relative w-full">
           <img src="{{notice.pic}}" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
@@ -28,25 +30,4 @@ layout: default
     </a>
   </article>
 {% endfor %}
-
-{{paginator.previous_page_path}}
-
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">
-      Previous
-    </a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
-  </span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-</div>
 
