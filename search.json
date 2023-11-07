@@ -8,6 +8,7 @@
       "url"     : "{{ site.baseurl }}{{ post.url }}",
       "dod"     : "{{ post.dod }}",
       "dob"     : "{{ post.dob }}",
+      "county"     : "{{ post.county }}",
       "desc"    : "{{ post.name | escape }} : {{ post.dob }} - {{ post.dod }}"
 
     } {% unless forloop.last %},{% endunless %}
