@@ -3,7 +3,11 @@
     {% include head.html %}
   </head>
 
-  <body>
-  {{ content }}
+  <body class="flex flex-col min-h-screen">
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
   </body>
 </html>

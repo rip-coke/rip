@@ -3,32 +3,25 @@
     {% include head.html %}
   </head>
 
-  <body>
+  <body class="flex flex-col min-h-screen">
+    {% include header.html %}
 
-
-
-    <a href="{{ site.url }}">
-      <div id="title" class="bg-white px-6 py-6 sm:py-6 lg:px-6">
-        <div class="mx-auto max-w-2xl text-center">
-          <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">{{site.name}}</h2>
-          <p class="mt-3 text-lg leading-8 text-gray-600">{{site.description}}</p>
+    <div id="content" class="bg-white py-6 sm:py-6">
+      <div class="mx-auto max-w-7xl px-6 lg:px-4">
+        {% if page.url == '/index.html' %}
+      <!-- Html Elements for Search -->
+      <form class="max-w-7xl">
+        <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+        <div class="relative">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+            </div>
+            <input type="search" id="search-input" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." required>
         </div>
-      </div>
-    </a>
-
-    <!-- Html Elements for Search -->
-    <form class="mx-auto max-w-7xl px-6 lg:px-4">
-      <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-      <div class="relative">
-          <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-              </svg>
-          </div>
-          <input type="search" id="search-input" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." required>
-      </div>
-      <ul class="hover:list-disc max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400" id="results-container"></ul>
-    </form>
+        <ul class="hover:list-disc max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400" id="results-container"></ul>
+      </form>
 
       <!-- Script pointing to search-script.js -->
       <script src="/assets/js/simple-jekyll-search.min.js" type="text/javascript"></script>
@@ -41,9 +34,7 @@
         json: '/search.json'
       })
       </script>
-
-    <div id="content" class="bg-white py-6 sm:py-6">
-      <div class="mx-auto max-w-7xl px-6 lg:px-4">
+    {% endif %}
         <div class="mx-auto mt-3 grid max-w-2xl grid-cols-1 gap-x-4 gap-y-4 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {{content}}
         </div>
@@ -73,10 +64,7 @@
     {% endif %}
 
 
-    <div id="footer" class="bg-neutral-200 p-6 text-center dark:bg-neutral-700">
-      <footer class="font-semibold text-neutral-600 dark:text-neutral-400">
-        {% include footer.html %}
-      </footer>
-    </div>
+
+    {% include footer.html %}
   </body>
 </html>

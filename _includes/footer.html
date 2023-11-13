@@ -1,1 +1,19 @@
-<div class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</div>
+<div id="footer" class="bg-neutral-200 p-6 text-center dark:bg-neutral-700 mt-auto">
+  <footer class="font-semibold text-neutral-600 dark:text-neutral-400">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+            <a href="/about" class="hover:underline me-4 md:me-6">About</a>
+        </li>
+        <li>
+            <a href="/terms" class="hover:underline me-4 md:me-6">Terms and Conditions</a>
+        </li>
+        <li>
+            <a href="/contact" class="hover:underline">Contact</a>
+        </li>
+    </ul>
+    </div>
+  </footer>
+</div>
