@@ -5,3 +5,19 @@
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
 <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+
+<meta property="og:site_name" content="{{site.name}} - {{site.description}}" />
+<meta property=“og:title” content="{{page.name}} ({{page.dob}} - {{page.dod}})" />
+<meta property="og:description" content="{{site.name}} - {{site.description}} :: {{page.name}} ({{page.dob}} - {{page.dod}})" />
+<meta property="og:url" content="{{page.url | prepend: site.url}}" />
+<meta property="og:type" content="article" />
+<meta property="article:publisher" content="{{site.url}}" />
+<meta property="article:section" content="Coding" />
+<meta property="article:tag" content="Coding" />
+<meta property="og:image" content="{{page.pic | prepend: site.url}}" />
+<meta property="og:image:secure_url" content="{{page.pic | prepend: site.url}}" />
+<meta property="og:image:width" content="512" />
+<meta property="og:image:height" content="256!" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="{{page.pic | prepend: site.url}}" />
+<meta property="twitter:site" content="@rip.ke" />
