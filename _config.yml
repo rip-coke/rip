@@ -21,10 +21,10 @@
 
 name: RIP
 title: RIP
-description: Celebrate your loved ones
+description: Commemorate loved ones
 email: rip.co.ke.254@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Celebrate your loved ones
+  Commemorate loved ones
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rip.ke" # the base hostname & protocol for your site, e.g. http://example.com
 
