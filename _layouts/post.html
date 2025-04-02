@@ -52,7 +52,17 @@
                   >{{page.dod | date: "%d %b %y" }}</time
                 >
               </div>
-              <div class="flex items-right">{{page.county}}</div>
+              <div class="flex items-right">
+                <a href="{{share_url}}" target="_blank">
+                  Share
+                </a>
+              </div>
+            </div>
+            <div class="flex items-center gap-x-4 text-s">
+              <div class="flex-auto">
+                <div class="flex items-right">{{page.county}}</div>
+              </div>
+              <div class="flex items-right"></div>
             </div>
             <div class="group relative">
               <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
