@@ -7,10 +7,9 @@ module.exports = {
     './*.md',
     './*.html',
   ],
+  
   theme: {
-    theme: {
-      extend: {},
-    },
+    extend: {},
   },
   plugins: []
 }
