@@ -10,7 +10,7 @@
 {% assign img_url = page.pic %}
 
 {% unless img_url %}
-    {% assign img_url = '/assets/images/rip.jpg' %}
+    {% assign img_url = '/assets/images/flag.jpg' %}
 {% endunless %}
 
 <meta property="og:site_name" content="{{site.name}} - {{site.description}}" />
@@ -28,3 +28,5 @@
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="{{img_url | prepend: site.url}}" />
 <meta property="twitter:site" content="@rip.ke" />
+
+{% include analytics.html %}
