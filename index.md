@@ -16,9 +16,7 @@ pagination:
         <div class="text-center">{{notice.name}}</div>
         <div class="flex mt-5 items-center gap-x-4 text-s">
           <div class="flex-auto">
-            <time datetime="2020-03" class="text-gray-500">{{notice.dob | date: "%d %b %y"}}</time>
-            -
-            <time datetime="2020-03" class="text-gray-500">{{notice.dod | date: "%d %b %y"}}</time>
+            Age : {{notice.age}}
           </div>
           <div class="flex items-right">{{notice.county}}</div>
         </div>
