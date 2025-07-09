@@ -1,11 +1,3 @@
-<script>
-  const btn = document.getElementById('nav-button');
-  const menu = document.getElementById('mobile-menu');
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-    btn.setAttribute('aria-expanded', menu.classList.contains('hidden') ? 'false' : 'true');
-  });
-</script>
 
 <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
 
@@ -100,3 +92,12 @@
     </div>
   </div>
 </a>
+
+<script>
+  const btn = document.getElementById('nav-button');
+  const menu = document.getElementById('mobile-menu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    btn.setAttribute('aria-expanded', menu.classList.contains('hidden') ? 'false' : 'true');
+  });
+</script>
