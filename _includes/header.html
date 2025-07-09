@@ -1,5 +1,5 @@
 <script>
-  const btn = document.querySelector('nav button');
+  const btn = document.getElementById('nav-button');
   const menu = document.getElementById('mobile-menu');
   btn.addEventListener('click', () => {
     menu.classList.toggle('hidden');
@@ -21,6 +21,7 @@
       <!-- Menu Button (mobile) -->
       <div class="sm:hidden">
         <button type="button"
+          id="nav-button"
           data-collapse-target="collapse"
           class="text-green-600 hover:text-green-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
           aria-label="Toggle menu" aria-expanded="false">
