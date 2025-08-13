@@ -9,7 +9,11 @@ module.exports = {
   ],
   
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ['ubuntu-regular', 'Roboto', 'sans-serif']
+      }
+    },
   },
   plugins: []
 }
