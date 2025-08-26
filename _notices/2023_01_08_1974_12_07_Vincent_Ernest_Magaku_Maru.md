@@ -1,7 +1,7 @@
 ---
 name: Vincent Ernest Magaku Maru
 dob: 1974-12-07
-dod: 2023-01-08
+dod: 2025-07-20
 county: Nyeri
 pic: /assets/images/2023_01_08_1974_12_07_Vincent_Ernest_Magaku_Maru.jpg
 user: 2

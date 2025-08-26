@@ -1,7 +1,7 @@
 ---
 name: Leah Tapkili Talai Kimopsop
 dob: 1982-08-12
-dod: 2023-01-12
+dod: 2025-08-01
 county: Nakuru
 pic: /assets/images/2023_01_12_1982_08_12_Leah_Tapkili_Talai_Kimopsop.jpg
 user: 2

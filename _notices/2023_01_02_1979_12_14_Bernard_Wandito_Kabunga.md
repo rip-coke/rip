@@ -1,7 +1,7 @@
 ---
 name: Bernard Wandito Kabunga
 dob: 1979-12-14
-dod: 2023-01-02
+dod: 2025-07-01
 county: Kiambu
 pic: /assets/images/2023_01_02_1979_12_14_Bernard_Wandito_Kabunga.jpg
 user: 2
