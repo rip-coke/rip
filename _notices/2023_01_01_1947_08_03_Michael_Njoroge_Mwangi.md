@@ -1,7 +1,7 @@
 ---
 name: Michael Njoroge Mwangi
 dob: 1947-08-03
-dod: 2023-01-01
+dod: 2025-06-01
 county: Mombasa
 pic: /assets/images/2023_01_01_1947_08_03_Michael_Njoroge_Mwangi.jpg
 user: 2

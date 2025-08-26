@@ -1,7 +1,7 @@
 ---
 name: Marvin Ngumbau Wambua
 dob: 1980-11-19
-dod: 2023-01-01
+dod: 2025-06-10
 county: Nairobi
 pic: /assets/images/2023_01_01_1980_11_19_Marvin_Ngumbau_Wambua.jpg
 user: 2
