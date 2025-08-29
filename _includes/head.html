@@ -9,6 +9,14 @@
 <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<style>
+    .swiper-slide {
+        display: flex;
+        align-items: center; /* Vertically centers the content */
+        justify-content: center; /* Horizontally centers the content (optional, but often desired) */
+    }
+</style>
+
 {% assign img_url = page.pic %}
 
 {% unless img_url %}
