@@ -9,7 +9,31 @@ permalink: /about.html
     
     const popup = new PaystackPop();
     var url = "<%= html_escape(home_verify_url('code')) %>"
-    document.getElementById('paystackBtn').onclick = function(e) {
+    document.getElementById('paystackJouralistBtn').onclick = function(e) {
+      e.preventDefault();
+       popup.newTransaction({
+        key: "{{site.paystack_public_key}}",
+        email: 'sample@email.com',
+        amount: 300,
+        onSuccess: (transaction) => {
+          console.log(transaction);
+        },
+        onLoad: (response) => {
+          console.log("onLoad: ", response);
+        },
+        onCancel: () => {
+          console.log("onCancel");
+        },
+        onError: (error) => {
+          console.log("Error: ", error.message);
+        },
+        onClose: function(){
+          alert('Payment window closed');
+        }
+      });
+    };
+
+    document.getElementById('paystackAIBtn').onclick = function(e) {
       e.preventDefault();
        popup.newTransaction({
         key: "{{site.paystack_public_key}}",
@@ -31,7 +55,7 @@ permalink: /about.html
           alert('Payment window closed');
         }
       });
-    }
+    };
 </script>
 
 <div id="content" class="bg-white pb-6 sm:pb-6 text-center">
@@ -113,7 +137,7 @@ permalink: /about.html
                             </div>
                             <a aria-label="Chat on WhatsApp"  target="_blank" href="https://wa.me/254722363449?text=Bespoke%20Bereavement%20Tribute">
                                 <button
-                                    id="paystackBtn"
+                                    id="paystackJouralistBtn"
                                     class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600">
                                     Choose Journalist
                                 </button>
@@ -167,6 +191,7 @@ permalink: /about.html
 
                         <a aria-label="Chat on WhatsApp"  target="_blank" href="https://wa.me/254722363449?text=AI%20Assisted%20Tribute">
                             <button
+                                id="paystackAIBtn"
                                 class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600">
                                 Choose AI
                             </button>
