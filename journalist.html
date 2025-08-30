@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bespoke Tribute Contact Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://js.paystack.co/v2/inline.js"> </script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <script type="module">
+        console.log('Paystack JavaScript loaded');
+
+        console.log("{{site.paystack_public_key}}");
+        
+        const popup = new PaystackPop();
+        var url = "<%= html_escape(home_verify_url('code')) %>"
+        document.getElementById('paystackJouralistBtn').onclick = function(e) {
+        e.preventDefault();
+        popup.newTransaction({
+            key: "{{site.paystack_public_key}}",
+            email: 'sample@email.com',
+            amount: 300,
+            onSuccess: (transaction) => {
+            console.log(transaction);
+            },
+            onLoad: (response) => {
+            console.log("onLoad: ", response);
+            },
+            onCancel: () => {
+            console.log("onCancel");
+            },
+            onError: (error) => {
+            console.log("Error: ", error.message);
+            },
+            onClose: function(){
+            alert('Payment window closed');
+            }
+        });
+        };
+    </script>
+    
+    <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
+      <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">Bespoke Tribute Request</h2>
+      <form class="space-y-6" id="tributeForm" novalidate>
+        <div>
+          <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          />
+        </div>
+        <div>
+          <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          />
+          <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid email address.</p>
+        </div>
+        <div>
+          <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            pattern="^\+?\d{10,15}$"
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          />
+          <p id="phoneError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid phone number (10-15 digits).</p>
+        </div>
+        <button
+          id="paystackJouralistBtn"
+          class="w-full py-2 px-4 bg-yellow-500 text-white font-semibold rounded-md hover:bg-yellow-600 transition-colors"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <script>
+      let emailTimeout, phoneTimeout;
+
+      // Email validation on keyup with timeout
+      document.getElementById('email').addEventListener('keyup', function() {
+        clearTimeout(emailTimeout);
+        emailTimeout = setTimeout(() => {
+          const email = this.value;
+          const emailError = document.getElementById('emailError');
+          const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+          if (!emailPattern.test(email)) {
+            emailError.classList.remove('hidden');
+          } else {
+            emailError.classList.add('hidden');
+          }
+        }, 400);
+      });
+
+      // Phone validation on keyup with timeout
+      document.getElementById('phone').addEventListener('keyup', function() {
+        clearTimeout(phoneTimeout);
+        phoneTimeout = setTimeout(() => {
+          const phone = this.value;
+          const phoneError = document.getElementById('phoneError');
+          const phonePattern = /^\+?\d{10,15}$/;
+          if (!phonePattern.test(phone)) {
+            phoneError.classList.remove('hidden');
+          } else {
+            phoneError.classList.add('hidden');
+          }
+        }, 400);
+      });
+    </script>
+  </body>
+</html>
