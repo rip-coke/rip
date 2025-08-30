@@ -2,26 +2,39 @@
 layout: page
 permalink: /about.html
 ---
-<!-- initialize transaction -->
-<!-- curl https://api.paystack.co/transaction/initialize -H "Authorization: Bearer ${PAYSTACK_SECRET_KEY}" -H "Content-Type: application/json" -d '{ "email": "customer@email.com", "amount": "1"}' -X POST -->
-<!-- Verify transaction -->
-<!-- curl https://api.paystack.co/transaction/verify/:reference -H "Authorization: Bearer ${PAYSTACK_SECRET_KEY}" -X GET -->
+<script type="module">
+    console.log('Paystack JavaScript loaded');
 
-<script>
+    console.log("{{site.paystack_public_key}}");
+    
     const popup = new PaystackPop();
-    var output = popup.resumeTransaction("ynjssmf3xg");
-    console.log(output);
+    var url = "<%= html_escape(home_verify_url('code')) %>"
+    document.getElementById('paystackBtn').onclick = function(e) {
+      e.preventDefault();
+       popup.newTransaction({
+        key: "{{site.paystack_public_key}}",
+        email: 'sample@email.com',
+        amount: 100,
+        onSuccess: (transaction) => {
+          console.log(transaction);
+        },
+        onLoad: (response) => {
+          console.log("onLoad: ", response);
+        },
+        onCancel: () => {
+          console.log("onCancel");
+        },
+        onError: (error) => {
+          console.log("Error: ", error.message);
+        },
+        onClose: function(){
+          alert('Payment window closed');
+        }
+      });
+    }
 </script>
-<section class="bg-neutral-200 p-6 text-center text-white  dark:bg-neutral-700 justify-center py-2">
-    <div class="py-2 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6">
-        <div class="mx-auto max-w-screen-sm text-center">
-            <h1 class="mb-4 text-3xl tracking-tight font-extrabold lg:text-5xl text-primary-600 dark:text-primary-500">
-                About</h1>
-        </div>
-    </div>
-</section>
 
-<div id="content" class="bg-white py-6 sm:py-6 text-center">
+<div id="content" class="bg-white pb-6 sm:pb-6 text-center">
     <div class="mx-auto">
         <section class="bg-white dark:bg-gray-600">
             <div class="container px-6 py-8 mx-auto">
@@ -100,6 +113,7 @@ permalink: /about.html
                             </div>
                             <a aria-label="Chat on WhatsApp"  target="_blank" href="https://wa.me/254722363449?text=Bespoke%20Bereavement%20Tribute">
                                 <button
+                                    id="paystackBtn"
                                     class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600">
                                     Choose Journalist
                                 </button>
