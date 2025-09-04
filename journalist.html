@@ -24,6 +24,7 @@ permalink: /journalist.html
           email: 'sample@email.com',
           amount: 7000000,
           onSuccess: (transaction) => {
+            data.append("transaction", JSON.stringify(transaction))
             fetch(event.target.action, {
               method: form.method,
               body: data,
