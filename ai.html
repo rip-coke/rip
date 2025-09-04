@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /journalist.html
+permalink: /ai.html
 ---
 
 
@@ -22,7 +22,7 @@ permalink: /journalist.html
       popup.newTransaction({
           key: "{{site.paystack_public_key}}",
           email: 'sample@email.com',
-          amount: 7000000,
+          amount: 1000000,
           onSuccess: (transaction) => {
             fetch(event.target.action, {
               method: form.method,
@@ -32,7 +32,7 @@ permalink: /journalist.html
               }
             }).then(response => {
               if (response.ok) {
-                status.innerHTML = `Thank you for choosing Rip.ke to commemorate your loved one. Biko and his team of journalists will be in touch shortly. Reference code ${transaction.reference}`;
+                status.innerHTML = `Thank you for choosing Rip.ke to commemorate your loved one. Your AI tribute link will be sent to your email shortly to complete. Reference code ${transaction.reference}`;
                 form.style.display="none"
               } else {
                 response.json().then(data => {
@@ -68,8 +68,8 @@ permalink: /journalist.html
 <div id="content" class="bg-white pb-6 sm:pb-6 text-center">
   <div class="mx-auto flex justify-center">
     <section class="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
-      <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">Bespoke Tribute Request</h2>
-      <p id="tributeFormStatus" class="pb-8"> Please enter the details below and submit the form. Biko and his team of journalists will be in touch shortly. Thank you for choosing Rip.ke to commemorate your loved one.  </p>
+      <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">AI Tribute Request</h2>
+      <p id="tributeFormStatus" class="pb-8"> Please enter the details below and submit the form. Your AI tribute link will be sent to your email shortly to complete. Thank you for choosing Rip.ke to commemorate your loved one.  </p>
       <form class="space-y-6" id="tributeForm" action="https://formspree.io/f/xwpoeark" method="POST">
         <div>
           <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
