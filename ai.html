@@ -36,7 +36,7 @@ permalink: /ai.html
                 status.innerHTML = `Thank you for choosing Rip.ke to commemorate your loved one. Your AI tribute link will be sent to your email shortly to complete. Reference code ${transaction.reference}`;
                 form.style.display="none"
                 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, 1_000));}
-                window.location.assign(`/ai_guide/${transaction.reference}`)
+                window.location.assign(`/ai_guide?ref=${transaction.reference}`)
               } else {
                 response.json().then(data => {
                   if (Object.hasOwn(data, 'errors')) {
