@@ -163,6 +163,8 @@ permalink: /ai_guide.html
     function updateProgress() {
         const progress = (currentStep / totalSteps) * 100;
         document.getElementById('progressFill').style.width = progress + '%';
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function showStep(step) {
