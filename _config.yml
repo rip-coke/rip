@@ -28,7 +28,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rip.ke" # the base hostname & protocol for your site, e.g. http://example.com
 incremental: true
-paystack_public_key: pk_live_2c769d994c26ced6f350b2b9fe7a6a47fae3f958
+paystack_public_key: pk_test_277074e948ffdbb6dce4eb6435c9423dbda487a3
 # Build settings
 postcss:
   cache: false
