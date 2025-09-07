@@ -209,7 +209,7 @@ permalink: /ai_guide.html
                     content: document.getElementById('completePreview').value
                 })
             })
-            .then(response => response.json())
+            .then(response => response)
             .then(data => console.log('Success:', data))
             .catch(error => console.error('Error:', error));
         }
