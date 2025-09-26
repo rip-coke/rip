@@ -73,6 +73,11 @@ permalink: /journalist.html
       <p id="tributeFormStatus" class="pb-8"> Please enter the details below and submit the form. Biko and his team of journalists will be in touch shortly. Thank you for choosing Rip.ke to commemorate your loved one.  </p>
       <form class="space-y-6" id="tributeForm" action="https://formspree.io/f/xwpoeark" method="POST">
         <div>
+          <input 
+            type="hidden" 
+            name="url"
+            id="url"
+          />
           <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
           <input
             type="text"
@@ -150,4 +155,6 @@ permalink: /journalist.html
       }
     }, 400);
   });
+
+  document.getElementById("url").value = window.location.href;
 </script>
