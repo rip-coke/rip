@@ -2,7 +2,16 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>"{{page.name|replace:".html",""}} ({{page.dob}} - {{page.dod}}) on {{site.name}}" </title>
+{% assign dob = page.dob | split: "-" %}
+{% assign dod = page.dod | split: "-" %}
+{% assign name = page.name | replace : ".html","" %}
+{% if (dod != dob) %}
+    {% assign title = name | append : " (" | append : dob[0] | append : " - " | append : dod[0] | append : ") Obituary on " | append : site.name %}
+{% else %}
+    {% assign title = name | append : ": Warm honest obituaries that capture life’s legacy" %}
+{% endif %}
+
+<title>{{title}}</title>
 
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
@@ -13,7 +22,12 @@
 
 <script src="https://js.paystack.co/v2/inline.js"> </script>
 
-{% include style.html%}
+{% if page.name == "ai_guide.html" %}
+    {% include ai_style.html%}
+{% else %}
+    {% include style.html%}
+{% endif%}
+
 
 {% assign img_url = page.pic %}
 
