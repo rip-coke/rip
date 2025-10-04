@@ -6,7 +6,11 @@
   <body class="flex flex-col min-h-screen font-roboto">
     {% include header.html %}
 
-    {{ content }}
+    <div id="content" class="bg-white py-6 sm:py-6">
+      <div class="mx-auto max-w-7xl px-6 lg:px-4">
+        {{content}}
+      </div>
+    </div>
 
     {% include footer.html %}
   </body>
