@@ -51,14 +51,17 @@ tiers:
     - Rich text editor
     - Chat support
 
+# applies pretty for all
+permalink: pretty
+
 pagination:
   enabled: true
   debug: true
   collection: 'notices'
   per_page: 6
-  permalink: '/notices/:num' # Pages are html files, linked jekyll extensionless permalink style.
-  #permalink: '/page/:num.html' # Pages are simple html files
-  #permalink: '/page/:num/' # Pages are index.html inside this folder (default)
+  permalink: '/notices/:num.html' # Pages are simple html files
+  # permalink: '/notices/:num/' # Pages are index.html inside this folder (default)
+  # permalink: '/notices/:num' # Pages are html files, linked jekyll extensionless permalink style.
   title: ':name - page :num'
   limit: 0
   sort_field: 'dod'
@@ -69,8 +72,6 @@ pagination:
   trail:
     before: 2
     after: 2
-  extension: html
-  indexpage: 'index'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
