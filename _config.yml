@@ -39,17 +39,26 @@ collections:
 
 tiers:
   top:
+    - Many photos
     - Interview family & friends
     - Journalist obituary editor
     - Phone and chat support
+    - Custom family tree
+    - Premium formatting
   middle:
+    - Several photos
     - Step by step AI guide
     - Final edit assistance
     - Phone and chat support
+    - No family tree
+    - Standard formatting
   bottom:
+    - One photo
     - Free of charge
     - Rich text editor
     - Chat support
+    - No family tree
+    - Basic formatting
 
 # applies pretty for all
 permalink: pretty
