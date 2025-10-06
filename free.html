@@ -55,6 +55,45 @@ permalink: /free
     ['Nyamira', 'Nyamira']
   ];
 
+  // Populate county <select> with options
+  (function populateCounties(){
+    const select = document.querySelector('select#county');
+    if (!select) return;
+    // optional placeholder
+    const placeholder = document.createElement('option');
+    placeholder.value = "";
+    placeholder.textContent = "Select county";
+    placeholder.disabled = true;
+    placeholder.selected = true;
+    select.appendChild(placeholder);
+
+    counties.forEach(([value, label]) => {
+      const opt = document.createElement('option');
+      opt.value = value;
+      opt.textContent = label;
+      select.appendChild(opt);
+    });
+  })();
+
+  // Send a POST to Formspree
+  async function sendToFormspree(formEl) {
+    try {
+      // create a fresh FormData from the form element (so it can be reused elsewhere)
+      const fsData = new FormData(formEl);
+      fsData.delete('attachment');
+      fsData.delete('message');
+      const resp = await fetch('https://formspree.io/f/xwpoeark', {
+        method: 'POST',
+        body: fsData,
+        headers: { 'Accept': 'application/json' }
+      });
+      const json = await resp.json().catch(()=>null);
+      return { ok: resp.ok, status: resp.status, json };
+    } catch (err) {
+      return { ok: false, error: err };
+    }
+  }
+
   form.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent default form submission
 
@@ -69,6 +108,16 @@ permalink: /free
     .then(data => { console.log('data'); console.log(data) })
     .then(info => { console.log('info1'); status.innerHTML = `Thank you for choosing Rip.ke to commemorate your loved one. A message with the obituary link will be sent to you shortly.` })
     .then(info =>  { console.log('info2'); form.style.display = "none" })
+    // also submit a copy to Formspree for email notifications/logging
+    .finally(() => {
+      sendToFormspree(form).then(res => {
+        if (res.ok) {
+          console.log('Formspree success', res);
+        } else {
+          console.error('Formspree error', res);
+        }
+      });
+    })
     .catch(error => { console.log('error'); console.error(error) }) 
   });
 
@@ -132,13 +181,9 @@ permalink: /free
         </div>   
         <div>
           <label for="county" class="block text-gray-700 font-medium mb-2">Obituary County</label>
-          <input
-            type="text"
-            id="county"
-            name="county"
-            required
-            class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
+          <select id="county" class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            
+          </select>
         </div>       
         <div>
           <label for="dod" class="block text-gray-700 font-medium mb-2">Obituary Date</label>
