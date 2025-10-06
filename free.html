@@ -10,6 +10,55 @@ permalink: /free
 
     const formData = new FormData(form); // gathers file input and other form fields
     const status = document.getElementById("obituaryFormStatus");
+    const counties = [
+      ['Nairobi', 'Nairobi'],
+      ['Mombasa', 'Mombasa'],
+      ['Machakos', 'Machakos'],
+      ['Uasin Gishu', 'Uasin Gishu'],
+      ['Kiambu', 'Kiambu'],
+      ['Kwale', 'Kwale'],
+      ['Kilifi', 'Kilifi'],
+      ['Tana River', 'Tana River'],
+      ['Lamu', 'Lamu'],
+      ['Taita/Taveta', 'Taita/Taveta'],
+      ['Garissa', 'Garissa'],
+      ['Wajir', 'Wajir'],
+      ['Mandera', 'Mandera'],
+      ['Marsabit', 'Marsabit'],
+      ['Isiolo', 'Isiolo'],
+      ['Meru', 'Meru'],
+      ['Tharaka-Nithi', 'Tharaka-Nithi'],
+      ['Embu', 'Embu'],
+      ['Kitui', 'Kitui'],
+      ['Makueni', 'Makueni'],
+      ['Nyandarua', 'Nyandarua'],
+      ['Nyeri', 'Nyeri'],
+      ['Kirinyaga', 'Kirinyaga'],
+      ["Murang'a", "Murang'a"],
+      ['Turkana', 'Turkana'],
+      ['West Pokot', 'West Pokot'],
+      ['Samburu', 'Samburu'],
+      ['Trans Nzoia', 'Trans Nzoia'],
+      ['Elgeyo/Marakwet', 'Elgeyo/Marakwet'],
+      ['Nandi', 'Nandi'],
+      ['Baringo', 'Baringo'],
+      ['Laikipia', 'Laikipia'],
+      ['Nakuru', 'Nakuru'],
+      ['Narok', 'Narok'],
+      ['Kajiado', 'Kajiado'],
+      ['Kericho', 'Kericho'],
+      ['Bomet', 'Bomet'],
+      ['Kakamega', 'Kakamega'],
+      ['Vihiga', 'Vihiga'],
+      ['Bungoma', 'Bungoma'],
+      ['Busia', 'Busia'],
+      ['Siaya', 'Siaya'],
+      ['Kisumu', 'Kisumu'],
+      ['Homa Bay', 'Homa Bay'],
+      ['Migori', 'Migori'],
+      ['Kisii', 'Kisii'],
+      ['Nyamira', 'Nyamira']
+    ];
 
     fetch('https://admin.rip.ke/verified', {
       method: 'POST',
@@ -79,7 +128,17 @@ permalink: /free
             required
             class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
           />
-        </div>        
+        </div>   
+        <div>
+          <label for="county" class="block text-gray-700 font-medium mb-2">Obituary County</label>
+          <input
+            type="text"
+            id="county"
+            name="county"
+            required
+            class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          />
+        </div>       
         <div>
           <label for="dod" class="block text-gray-700 font-medium mb-2">Obituary Date</label>
           <input
