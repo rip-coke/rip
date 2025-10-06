@@ -37,14 +37,28 @@ collections:
   notices:
     output: true
 
+tiers:
+  top:
+    - Family and freinds interviewed
+    - Journalist customised obituary
+    - Phone and chat support
+  middle:
+    - Step by step AI guide
+    - Final edit assistance
+    - Phone and chat support
+  bottom:
+    - Free of charge
+    - Rich text editor
+    - Chat support
+
 pagination:
   enabled: true
   debug: true
   collection: 'notices'
   per_page: 6
-  permalink: '/notices/:num/' # Pages are index.html inside this folder (default)
+  permalink: '/notices/:num' # Pages are html files, linked jekyll extensionless permalink style.
   #permalink: '/page/:num.html' # Pages are simple html files
-  #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
+  #permalink: '/page/:num/' # Pages are index.html inside this folder (default)
   title: ':name - page :num'
   limit: 0
   sort_field: 'dod'

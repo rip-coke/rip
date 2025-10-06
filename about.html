@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /about.html
+permalink: /about
 ---
 <div id="content" class="bg-white pb-6 sm:pb-6 text-center">
     <div class="mx-auto">
@@ -11,11 +11,6 @@ permalink: /about.html
                 </h1>
                 <div class="mx-auto mt-3 text-white">
                     Traditional obituaries list facts — name, dates, schools, jobs, relatives — and leave out who the person really was. After my father died in May 2025 I wanted something different: an obituary that captured his personality, the love he gave, and the mark he left.
-                </div>
-                <div class="mx-auto add mt-3 ">
-                    <a href="/notices/2025_05_19_1953_04_12_Richard_Muia.html" >
-                        <img class="add-img" width="50%" src="/assets/images/full_add.gif" alt=""/>
-                    </a>
                 </div>
                 <div class="mx-auto mt-3 text-white">
                     We hired a seasoned journalist to interview family, friends, and colleagues. The result — refined with the family’s input — is an honest, therapeutic portrait: anecdotes, feelings, and the quiet things that ordinary notices miss. Then we published it online, a living memorial that reflects the person, not just the resume.
@@ -33,43 +28,28 @@ permalink: /about.html
                             <div class="text-center">
                                 <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Bespoke Obituary</p>
                                 <p class="mt-4 text-gray-500 dark:text-gray-300">Seasoned Journalists Assist you in Crafting a Befitting Obituary </p>
-                                <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">KSh 100,000</h4>
-                                <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">KSh 70,000</h4>
+                                <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">KSh 100,000</h4>
                             </div>
 
                             <div class="mt-8 space-y-8">
-                                <div class="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500"
-                                        viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
-                                    </svg>
+                                <a href="/notices/Richard_Muia" >
+                                    <img class="add-img" width="50%" src="/assets/images/full_add.gif" alt=""/>
+                                </a>
+                            </div>
 
-                                    <span class="mx-4 text-gray-700 dark:text-gray-300">Family and freinds interviewed</span>
-                                </div>
+                            <div class="mt-8 space-y-8">
+                                {% for offer in site.tiers.top %}
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
 
-                                <div class="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500"
-                                        viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-
-                                    <span class="mx-4 text-gray-700 dark:text-gray-300">Journalist customised obituary</span>
-                                </div>
-
-                                <div class="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500"
-                                        viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-
-                                    <span class="mx-4 text-gray-700 dark:text-gray-300">Phone and chat support</span>
-                                </div>
+                                        <span class="mx-4 text-gray-700 dark:text-gray-300">{{offer}}</span>
+                                    </div>
+                                {% endfor %}
                             </div>
                             <a href="/journalist">
                                 <button
@@ -85,48 +65,69 @@ permalink: /about.html
                         <div class="text-center">
                             <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">AI Assisted Obituary</p>
                             <p class="mt-4 text-gray-500 dark:text-gray-300">Artificial Intelligence Assists in Crafting your Obituary</p>
-                            <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">KSh 20,000</h4>
                             <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">KSh 10,000</h4>
                         </div>
 
                         <div class="mt-8 space-y-8">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                        clip-rule="evenodd" />
-                                </svg>
+                            <a href="/notices/Richard_Muia" >
+                                <img class="add-img" width="50%" src="/assets/images/full_add.gif" alt=""/>
+                            </a>
+                        </div>
 
-                                <span class="mx-4 text-gray-700 dark:text-gray-300">Step by step AI guide</span>
-                            </div>
+                        <div class="mt-8 space-y-8">
+                            {% for offer in site.tiers.middle %}
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
 
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-
-                                <span class="mx-4 text-gray-700 dark:text-gray-300">Final edit assistance</span>
-                            </div>
-
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-
-                                <span class="mx-4 text-gray-700 dark:text-gray-300">Phone and chat support</span>
-                            </div>
+                                    <span class="mx-4 text-gray-700 dark:text-gray-300">{{offer}}</span>
+                                </div>
+                            {% endfor %}
                         </div>
                         <a href="/ai">
                             <button
                                 class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600">
                                 Choose AI
+                            </button>
+                        </a>
+                    </div>
+
+                    <div
+                        class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg md:mx-5 md:w-96 bg-gray-50 dark:bg-gray-800">
+                        <div class="text-center">
+                            <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Free Obituary</p>
+                            <p class="mt-4 text-gray-500 dark:text-gray-300">With user freindly tools, you can craft your own Obituary</p>
+                            <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">KSh 0</h4>
+                        </div>
+
+                        <div class="mt-8 space-y-8">
+                            <a href="/notices/Richard_Muia" >
+                                <img class="add-img" width="50%" src="/assets/images/full_add.gif" alt=""/>
+                            </a>
+                        </div>
+
+                        <div class="mt-8 space-y-8">
+                            {% for offer in site.tiers.bottom %}
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
+                                    <span class="mx-4 text-gray-700 dark:text-gray-300">{{offer}}</span>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <a href="/free">
+                            <button
+                                class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600">
+                                Choose Free
                             </button>
                         </a>
                     </div>
