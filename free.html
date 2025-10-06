@@ -2,78 +2,34 @@
 layout: page
 permalink: /free
 ---
-
-
 <script type="module">
-    console.log('Paystack JavaScript loaded');
+  const form = document.querySelector('form');
 
-    console.log("{{site.paystack_public_key}}");
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
 
-    const popup = new PaystackPop();
-    var url = "<%= html_escape(home_verify_url('code')) %>"
-    var form = document.getElementById("obituaryForm");
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
+    const formData = new FormData(form); // gathers file input and other form fields
+    const status = document.getElementById("obituaryFormStatus");
 
-      var status = document.getElementById("obituaryFormStatus");
-      var data = new FormData(event.target);
-      
-      popup.newTransaction({
-          key: "{{site.paystack_public_key}}",
-          email: 'sample@email.com',
-          amount: 1000000,
-          onSuccess: (transaction) => {
-            data.append("transaction", JSON.stringify(transaction))
-            fetch(event.target.action, {
-              method: form.method,
-              body: data,
-              headers: {
-                  'Accept': 'application/json'
-              }
-            }).then(response => {
-              if (response.ok) {
-                status.innerHTML = `Thank you for choosing Rip.ke to commemorate your loved one. Reference code ${transaction.reference}`;
-                form.style.display="none"
-                function sleep(ms) { return new Promise(resolve => setTimeout(resolve, 1_000));}
-                window.location.assign(`/ai_guide?ref=${transaction.reference}`)
-              } else {
-                response.json().then(data => {
-                  if (Object.hasOwn(data, 'errors')) {
-                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                  } else {
-                    status.innerHTML = "Oops! There was a problem submitting your form"
-                  }
-                })
-              }
-            }).catch(error => {
-              status.innerHTML = "Oops! There was a problem submitting your form"
-            });
-          console.log("Success: ", transaction);
-          },
-          onLoad: (response) => {
-          console.log("onLoad: ", response);
-          },
-          onCancel: () => {
-          console.log("onCancel");
-          },
-          onError: (error) => {
-          console.log("Error: ", error.message);
-          },
-          onClose: function(){
-          alert('Payment window closed');
-          }
-        });
-    }
-    form.addEventListener("submit", handleSubmit)
+    fetch('https://admin.rip.ke/verified', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => { console.log('response'); console.log(response) })
+    .then(data => { console.log('data'); console.log(data) })
+    .then(info => { console.log('info1'); status.innerHTML = `Thank you for choosing Rip.ke to commemorate your loved one. A message with the obituary link will be sent to you shortly.` })
+    .then(info =>  { console.log('info2'); form.style.display = "none" })
+    .catch(error => { console.log('error'); console.error(error) }) 
+  });
+
 </script>
 
 <div id="content" class="bg-white pb-6 sm:pb-6 text-center">
   <div class="mx-auto flex justify-center">
-    <section class="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
-      <h1 class="text-2xl font-bold mb-6 text-gray-800 text-center">AI Obituary Request</h1>
-      <p id="obituaryFormStatus" class="pb-8"> Please enter some contact details below to start writing your AI assisted obituary. Thank you for choosing Rip.ke to commemorate your loved one.  </p>
-      <form class="space-y-6" id="obituaryForm" action="https://formspree.io/f/xwpoeark" method="POST">
+    <section class="w-full bg-white rounded-lg shadow-lg p-8">
+      <h1 class="text-2xl font-bold mb-6 text-gray-800 text-center">Free Obituary Request</h1>
+      <p id="obituaryFormStatus" class="pb-8">Please give us some contact details so we can send you the published link and submit your obituary. Thank you for choosing Rip.ke to commemorate your loved one.</p>
+      <form class="space-y-6" id="obituaryForm" action="" method="POST" enctype="multipart/form-data">
         <div>
           <input 
             type="hidden" 
@@ -86,7 +42,7 @@ permalink: /free
             id="name"
             name="name"
             required
-            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
           />
         </div>
         <div>
@@ -97,7 +53,7 @@ permalink: /free
             name="email"
             required
             pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
-            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
           />
           <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid email address.</p>
         </div>
@@ -109,16 +65,41 @@ permalink: /free
             name="phone"
             required
             pattern="^\+?\d{10,15}$"
-            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
           />
           <p id="phoneError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid phone number (10-15 digits).</p>
         </div>
+                
+        <div>
+          <label for="message" class="block text-gray-700 font-medium mb-2">Obituary</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            class="max-w-md w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 resize-vertical"
+            placeholder="Write a short obituary or message..."
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="attachment" class="block text-gray-700 font-medium mb-2">Upload a photo (optional)</label>
+          <input
+            type="file"
+            id="attachment"
+            name="attachment"
+            accept="image/*"
+            class="max-w-md w-full text-sm text-gray-700"
+          />
+          <p id="fileName" class="text-sm text-gray-600 mt-2"></p>
+          
+        </div>
+
         <button
           id="paystackJouralistBtn"
-          class="w-full py-2 px-4 bg-yellow-500 text-white font-semibold rounded-md hover:bg-yellow-600 transition-colors"
+          class="max-w-md py-2 px-4 bg-yellow-500 text-white font-semibold rounded-md hover:bg-yellow-600 transition-colors"
           type="submit"
         >
-          Start
+          Submit
         </button>
       </form>
     </section>
