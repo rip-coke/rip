@@ -37,14 +37,40 @@ collections:
   notices:
     output: true
 
+tiers:
+  top:
+    - Many photos
+    - Interview family & friends
+    - Journalist obituary editor
+    - Phone and chat support
+    - Custom family tree
+    - Premium formatting
+  middle:
+    - Several photos
+    - Step by step AI guide
+    - Final edit assistance
+    - Phone and chat support
+    - No family tree
+    - Standard formatting
+  bottom:
+    - One photo
+    - Free of charge
+    - Rich text editor
+    - Chat support
+    - No family tree
+    - Basic formatting
+
+# applies pretty for all
+permalink: pretty
+
 pagination:
   enabled: true
   debug: true
   collection: 'notices'
   per_page: 6
-  permalink: '/notices/:num/' # Pages are index.html inside this folder (default)
-  #permalink: '/page/:num.html' # Pages are simple html files
-  #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
+  permalink: '/notices/:num.html' # Pages are simple html files
+  # permalink: '/notices/:num/' # Pages are index.html inside this folder (default)
+  # permalink: '/notices/:num' # Pages are html files, linked jekyll extensionless permalink style.
   title: ':name - page :num'
   limit: 0
   sort_field: 'dod'
@@ -55,8 +81,6 @@ pagination:
   trail:
     before: 2
     after: 2
-  extension: html
-  indexpage: 'index'
 
 # Exclude from processing.
 # The following items will not be processed, by default.

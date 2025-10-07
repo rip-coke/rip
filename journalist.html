@@ -1,14 +1,10 @@
 ---
 layout: page
-permalink: /journalist.html
+permalink: /journalist
 ---
 
 
 <script type="module">
-    console.log('Paystack JavaScript loaded');
-
-    console.log("{{site.paystack_public_key}}");
-
     const popup = new PaystackPop();
     var url = "<%= html_escape(home_verify_url('code')) %>"
     var form = document.getElementById("obituaryForm");

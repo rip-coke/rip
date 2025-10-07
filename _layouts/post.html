@@ -5,7 +5,6 @@
 
   <body class="flex flex-col min-h-screen font-roboto">
     {% include header.html %}
-
     <div id="content" class="bg-white py-6 sm:py-6">
       <div class="mx-auto max-w-7xl px-6 lg:px-4">
         <div
@@ -14,21 +13,18 @@
           <div class="relative w-full">
             <div class="swiper swiper-container">
               <div class="swiper-wrapper">
-                  <div class="swiper-slide align-middle md:align-middle">
-                    <img src="{{page.pic}}" alt=""/>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/assets/images/2025_05_19_1953_04_12_Richard_Muia_1.jpg" alt=""/>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/assets/images/2025_05_19_1953_04_12_Richard_Muia_2.jpg" alt=""/>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/assets/images/2025_05_19_1953_04_12_Richard_Muia_3.jpg" alt=""/>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/assets/images/2025_05_19_1953_04_12_Richard_Muia_4.jpg" alt=""/>
-                  </div>
+                {% assign pic = (page.pic | split: '.') %}
+                {% assign files = site.static_files %}
+                {% for file in files %}
+                  {% if {{file.path}} contains {{pic[0]}} %} 
+                    {% if {{file.path}} contains "tree" %} 
+                    {% else %}
+                      <div class="swiper-slide align-middle md:align-middle">
+                        <img src="{{file.path}}" alt=""/>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %} 
               </div>
               <div class="swiper-pagination"></div>
               <div class="swiper-button-next"></div>
