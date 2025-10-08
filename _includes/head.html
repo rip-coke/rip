@@ -2,17 +2,18 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Warm, journalist-crafted obituaries, tributes, and memorials that capture a life’s true legacy. Contact us today to honor your loved one.">
-
-
 {% assign dob = page.dob | split: "-" %}
 {% assign dod = page.dod | split: "-" %}
 {% assign name = page.name | replace : ".html","" %}
 {% if (dod != dob) %}
-    {% assign title = name | append : " (" | append : dob[0] | append : " - " | append : dod[0] | append : ") Obituary on " | append : site.name %}
+{% assign title = name | append : " (" | append : dob[0] | append : " - " | append : dod[0] | append : ") Obituary | " | append : site.name %}
+{% assign desc = "A warm honest obituary capturing life’s legacy" %}
 {% else %}
-    {% assign title = name | append : ": Warm honest obituaries that capture life’s legacy" %}
+{% assign title = page.title  %}
+{% assign desc = page.desc %}
 {% endif %}
+
+<meta name="description" content="{{desc}}">
 
 <title>{{title}}</title>
 
@@ -39,8 +40,8 @@
 {% endunless %}
 
 <meta property="og:site_name" content="{{site.name}} - {{site.description}}" />
-<meta property=“og:title” content="{{page.name}} ({{page.dob}} - {{page.dod}})" />
-<meta property="og:description" content="{{site.name}} - {{site.description}} :: {{page.name}} ({{page.dob}} - {{page.dod}})" />
+<meta property=“og:title” content="{{title}}" />
+<meta property="og:description" content="{{desc}}" />
 <meta property="og:url" content="{{page.url | prepend: site.url}}" />
 <meta property="og:type" content="article" />
 <meta property="article:publisher" content="{{site.url}}" />

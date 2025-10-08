@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Free Online Obituaries | Rip.ke
+desc: Rip.ke offers warm, journalist-crafted obituaries, tributes, and memorials that capture a life's true legacy. Contact us today to honor your loved one.
 pagination:
   enabled: true
 ---
