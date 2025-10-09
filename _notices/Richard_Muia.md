@@ -33,7 +33,7 @@ layout: post
         <h1 id="tree" class="pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Family Tree </h1>
 
         <p class="relative w-full">
-          <img src="/assets/images/Richard_Muia_tree.png" alt="">
+          <img src="/assets/images/Richard_Muia_tree.png" alt="family tree picture for {{page.name}}">
         </p>
 
         <h1 id="education" class="pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Education and Formation </h1>

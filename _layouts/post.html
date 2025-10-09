@@ -13,14 +13,14 @@
           <div class="relative w-full">
             <div class="swiper swiper-container">
               <div class="swiper-wrapper">
-                {% assign pic = (page.pic | split: '.') %}
+                {% assign pic = page.pic | split: '.' %}
                 {% assign files = site.static_files %}
                 {% for file in files %}
-                  {% if {{file.path}} contains {{pic[0]}} %} 
-                    {% if {{file.path}} contains "tree" %} 
+                  {% if file.path contains pic[0] %} 
+                    {% if file.path contains "tree" %} 
                     {% else %}
                       <div class="swiper-slide align-middle md:align-middle">
-                        <img src="{{file.path}}" alt=""/>
+                        <img src="{{file.path}}" alt="picture of {{page.name}}"/>
                       </div>
                     {% endif %}
                   {% endif %}

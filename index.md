@@ -11,7 +11,7 @@ pagination:
   <article class="flex flex-col items-start justify-between pt-3 break-after-column">
     <a href="{{ notice.url }}">
       <div class="relative w-full">
-          <img src="{{notice.pic}}" alt="" class="aspect-[1/1] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[1/1] lg:aspect-[1/1]">
+          <img src="{{notice.pic}}" alt="portrait pic for {{notice.name}}" class="aspect-[1/1] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[1/1] lg:aspect-[1/1]">
           <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
       </div>
       <div class="w-full mt-8 px-4">
