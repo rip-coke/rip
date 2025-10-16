@@ -33,6 +33,10 @@ paystack_public_key: pk_test_277074e948ffdbb6dce4eb6435c9423dbda487a3
 postcss:
   cache: false
 
+webrick:
+  headers:
+    Content-Security-Policy: "frame-ancestors help.disqus.com rip-ke.disqus.com;"
+
 collections:
   notices:
     output: true

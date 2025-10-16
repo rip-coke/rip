@@ -6,6 +6,7 @@ county: Nairobi
 pic: /assets/images/Richard_Muia.jpg
 user: 2
 layout: post
+comments: true
 ---
 
 <div class="flex flex-col h-screen overflow-hidden">

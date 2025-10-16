@@ -82,7 +82,8 @@
               <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
                 {{ page.content }}
               </p>
-              {% if page.comments %} 
+            </div>
+            {% if page.comments %} 
               <div id="disqus_thread"></div>
               <script>
                   /**
@@ -103,7 +104,6 @@
               </script>
               <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             {% endif %}
-            </div>
           </div>
           <script>
             var swiper = new Swiper('.swiper-container', {
