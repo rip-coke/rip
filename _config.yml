@@ -33,6 +33,10 @@ paystack_public_key: pk_live_2c769d994c26ced6f350b2b9fe7a6a47fae3f958
 postcss:
   cache: false
 
+webrick:
+  headers:
+    Content-Security-Policy: frame-ancestors 'self' https://help.disqus.com https://rip-ke.disqus.com;
+
 collections:
   notices:
     output: true
