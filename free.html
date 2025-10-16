@@ -123,6 +123,8 @@ permalink: /free
     .catch(error => { console.log('error'); console.error(error) }) 
   });
 
+  const fileTools = document.querySelector(".trix-button-group--file-tools");
+  fileTools?.remove();
 </script>
 
 <div id="content" class="bg-white pb-6 sm:pb-6 text-center">
@@ -207,14 +209,14 @@ permalink: /free
           />
         </div>        
         <div>
-          <label for="message" class="block text-gray-700 font-medium mb-2">Obituary</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="6"
-            class="max-w-md w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 resize-vertical"
+          <input id="message" type="hidden" name="message">
+          <label aria-labelledby="trix" class="block text-gray-700 font-medium mb-2">Obituary</label>
+          <trix-editor
+            id="trix"
+            name="trix"
+            input="message"
             placeholder="Write a short obituary or message..."
-          ></textarea>
+          ></trix-editor> 
         </div>
 
         <div>
