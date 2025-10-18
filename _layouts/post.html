@@ -78,11 +78,74 @@
               </div>
               <div class="flex items-right"></div>
             </div>
-            <div class="group relative">
-              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                {{ page.content }}
-              </p>
+            <!-- Tabs: Details / Notes (Notes has a scrollable window) -->
+            <div class="mt-6">
+              <div class="">
+                <nav class="-mb-px flex space-x-4" aria-label="Tabs">
+                  <button id="tab-notes-btn" class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600" aria-selected="false">Obituary</button>
+                  <button id="tab-details-btn" class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600" aria-controls="tab-details" aria-selected="true">Condolences</button>
+                </nav>
+              </div>
+
+              <div id="tab-details" class="mt-4 flex flex-col h-screen overflow-hidden hidden">
+                {% if page.comments %} 
+                  <div id="disqus_thread" class="flex-1 overflow-y-scroll"></div>
+                  <script>
+                      /**
+                      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                      var disqus_config = function () {
+                        this.page.url = "{{ site.url }}{{ page.url }}";  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = "{{ page.id }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                      };
+                      (function() { // DON'T EDIT BELOW THIS LINE
+                      var d = document, s = d.createElement('script');
+                      s.src = 'https://rip-ke.disqus.com/embed.js';
+                      s.setAttribute('data-timestamp', +new Date());
+                      (d.head || d.body).appendChild(s);
+                      })();
+                  </script>
+                  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                {% endif %}
+              </div>
+
+              <div id="tab-notes"  class="group relative">
+                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                  
+                  {{ page.content }}
+                </p>
+              </div>
+              
             </div>
+
+            <script>
+              (function(){
+                const detailsBtn = document.getElementById('tab-details-btn');
+                const notesBtn = document.getElementById('tab-notes-btn');
+                const details = document.getElementById('tab-details');
+                const notes = document.getElementById('tab-notes');
+
+                function showDetails(){
+                  details.classList.remove('hidden');
+                  notes.classList.add('hidden');
+                  detailsBtn.classList.add('border-yellow-500','text-gray-900');
+                  notesBtn.classList.remove('border-yellow-500','text-gray-900');
+                  detailsBtn.setAttribute('aria-selected','true');
+                  notesBtn.setAttribute('aria-selected','false');
+                }
+                function showNotes(){
+                  notes.classList.remove('hidden');
+                  details.classList.add('hidden');
+                  notesBtn.classList.add('border-yellow-500','text-gray-900');
+                  detailsBtn.classList.remove('border-yellow-500','text-gray-900');
+                  notesBtn.setAttribute('aria-selected','true');
+                  detailsBtn.setAttribute('aria-selected','false');
+                }
+
+                detailsBtn.addEventListener('click', showDetails);
+                notesBtn.addEventListener('click', showNotes);
+              })();
+            </script>
           </div>
           <script>
             var swiper = new Swiper('.swiper-container', {
