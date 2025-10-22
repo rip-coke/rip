@@ -123,6 +123,44 @@ permalink: /free
     .catch(error => { console.log('error'); console.error(error) }) 
   });
 
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Show loading spinner
+    const spinner = document.getElementById('submitSpinner');
+    const submitBtn = event.target.querySelector('button[type="submit"]');
+    spinner.classList.remove('hidden');
+    submitBtn.disabled = true;
+
+    const formData = new FormData(form); // gathers file input and other form fields
+    const status = document.getElementById("obituaryFormStatus");
+
+    fetch('https://admin.rip.ke/upload', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => { console.log('response'); console.log(response) })
+    .then(data => { console.log('data'); console.log(data) })
+    .then(info => { console.log('info1'); status.innerHTML = `Thank you for choosing Rip.ke to commemorate your loved one. A message with the obituary link will be sent to you shortly.` })
+    .then(info =>  { console.log('info2'); form.style.display = "none" })
+    // also submit a copy to Formspree for email notifications/logging
+    .finally(() => {
+      sendToFormspree(form).then(res => {
+        if (res.ok) {
+          console.log('Formspree success', res);
+        } else {
+          console.error('Formspree error', res);
+        }
+      });
+    })
+    .catch(error => { console.log('error'); console.error(error) }) 
+    .finally(() => {
+      // Hide spinner and re-enable button when done
+      spinner.classList.add('hidden');
+      submitBtn.disabled = false;
+    });
+  });
+
   const fileTools = document.querySelector(".trix-button-group--file-tools");
   fileTools?.remove();
 </script>
@@ -237,11 +275,16 @@ permalink: /free
         </p>
 
         <button
-          id="paystackJouralistBtn"
-          class="max-w-md py-2 px-4 bg-yellow-500 text-white font-semibold rounded-md hover:bg-yellow-600 transition-colors"
           type="submit"
+          class="max-w-md py-2 px-4 bg-yellow-500 text-white font-semibold rounded-md hover:bg-yellow-600 transition-colors flex items-center justify-center"
         >
-          Submit
+          <span>Submit</span>
+          <img
+            src="/assets/images/loading.gif"
+            alt="Loading..."
+            class="w-5 h-5 ml-2 hidden"
+            id="submitSpinner"
+          />
         </button>
       </form>
     </section>
