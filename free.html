@@ -176,116 +176,131 @@ permalink: /free
           name="url"
           id="url"
         />
-        <div>
-          <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
-        </div>
-        <div>
-          <label for="email" class="block text-gray-700 font-medium mb-2">Your Email Address</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
-            class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
-          <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid email address.</p>
-        </div>
-        <div>
-          <label for="phone" class="block text-gray-700 font-medium mb-2">Your Phone Number</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            required
-            pattern="^\+?\d{10,15}$"
-            class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
-          <p id="phoneError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid phone number (10-15 digits).</p>
+        
+        <div class="border-2 border-yellow-500 rounded-lg p-6 bg-white shadow-md max-w-md mx-auto">
+          <h2 class="text-lg font-semibold text-gray-800 mb-3">Your Contact Details</h2>
+
+          <div>
+            <label for="name" class="block text-gray-700 font-medium mb-2 mt-4">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-gray-700 font-medium mb-2 mt-4">Your Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+              class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+            <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid email address.</p>
+          </div>
+          <div>
+            <label for="phone" class="block text-gray-700 font-medium mb-2 mt-4">Your Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              pattern="^\+?\d{10,15}$"
+              class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+            <p id="phoneError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid phone number (10-15 digits).</p>
+          </div>
         </div>
 
-        <div>
-          <label for="name" class="block text-gray-700 font-medium mb-2">Obituary Name</label>
-          <input
-            type="text"
-            id="name_obit"
-            name="name_obit"
-            required
-            class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
-        </div>   
-        <div>
-          <label for="county" class="block text-gray-700 font-medium mb-2">Obituary County</label>
-          <select id="county" name="county" class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500">
-          </select>
-        </div>       
-        <div>
-          <label for="dod" class="block text-gray-700 font-medium mb-2">Obituary Date</label>
-          <input
-            type="date"
-            id="dod"
-            name="dod"
-            required
-            class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
+        <div class="border-2 border-yellow-500 rounded-lg p-6 bg-white shadow-md max-w-md mx-auto">
+          <h2 class="text-lg font-semibold text-gray-800 mb-3">Obituary Details</h2>
+          <div>
+            <label for="name" class="block text-gray-700 font-medium mb-2 mt-4">Name</label>
+            <input
+              type="text"
+              id="name_obit"
+              name="name_obit"
+              required
+              class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+          </div>   
+          <div>
+            <label for="county" class="block text-gray-700 font-medium mb-2 mt-4">County</label>
+            <select id="county" name="county" class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            </select>
+          </div>       
+          <div>
+            <label for="dod" class="block text-gray-700 font-medium mb-2 mt-4">Date of Death</label>
+            <input
+              type="date"
+              id="dod"
+              name="dod"
+              required
+              class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+          </div>        
+          <div>
+            <label for="dob" class="block text-gray-700 font-medium mb-2 mt-4">Date of Birth</label>
+            <input
+              type="date"
+              id="dob"
+              name="dob"
+              required
+              class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+          </div>        
         </div>        
-        <div>
-          <label for="dob" class="block text-gray-700 font-medium mb-2">Obituary Birth Date</label>
-          <input
-            type="date"
-            id="dob"
-            name="dob"
-            required
-            class="max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
-        </div>        
-        <div>
-          <input id="message" type="hidden" name="message">
-          <label aria-labelledby="trix" class="block text-gray-700 font-medium mb-2">Obituary</label>
-          <trix-editor
-            id="trix"
-            name="trix"
-            input="message"
-            placeholder="Write a short obituary or message..."
-          ></trix-editor> 
+
+        <div class="border-2 border-yellow-500 rounded-lg p-6 bg-white shadow-md max-w-md mx-auto">
+          <h2 class="text-lg font-semibold text-gray-800 mb-3">Obituary Message</h2>
+          <div>
+            <input id="message" type="hidden" name="message">
+            <trix-editor
+              id="trix"
+              name="trix"
+              input="message"
+              placeholder="Write your obituary..."
+            ></trix-editor> 
+          </div>
         </div>
 
-        <div>
-          <label for="attachment" class="block text-gray-700 font-medium mb-2">Upload a photo (optional)</label>
-          <input
-            type="file"
-            id="attachment"
-            name="attachment"
-            accept="image/*"
-            class="max-w-md w-full text-sm text-gray-700"
-          />
-          <p id="fileName" class="text-sm text-gray-600 mt-2"></p>
-          
+        <div class="border-2 border-yellow-500 rounded-lg p-6 bg-white shadow-md max-w-md mx-auto">
+          <h2 class="text-lg font-semibold text-gray-800 mb-3">Upload Photo</h2>
+          <div>
+            
+            <input
+              type="file"
+              id="attachment"
+              name="attachment"
+              accept="image/*"
+              class="max-w-md w-full text-sm text-gray-700"
+            />
+            <p id="fileName" class="text-sm text-gray-600 mt-2"></p>          
+          </div>
         </div>
 
         <p>
           By clicking the button below you agree to the <a target="_blank" class="text-yellow-700 dark:text-yellow-700 underline" href="/terms">terms and conditions</a>.
         </p>
 
-        <button
-          type="submit"
-          class="max-w-md py-2 px-4 bg-yellow-500 text-white font-semibold rounded-md hover:bg-yellow-600 transition-colors flex items-center justify-center"
-        >
-          <span>Submit</span>
-          <img
-            src="/assets/images/loading.gif"
-            alt="Loading..."
-            class="w-5 h-5 ml-2 hidden"
-            id="submitSpinner"
-          />
-        </button>
+        <div class="flex justify-center mt-6">
+          <button
+            type="submit"
+            class="max-w-md w-full sm:w-auto py-2 px-4 bg-yellow-500 text-white font-semibold rounded-md hover:bg-yellow-600 transition-colors flex items-center justify-center"
+          >
+            <span>Submit</span>
+            <img
+              src="/assets/images/loading.gif"
+              alt="Loading..."
+              class="w-5 h-5 ml-2 hidden"
+              id="submitSpinner"
+            />
+          </button>
+        </div>
       </form>
     </section>
   </div>
