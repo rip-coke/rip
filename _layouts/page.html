@@ -1,6 +1,19 @@
+{% case page.name  %}
+  {% when "journalist.html" %}
+    {% assign page_type = "Journalist" %}
+  {% when "ai.html" %}
+    {% assign page_type = "AI" %}
+  {% when "free.html" %}
+    {% assign page_type = "Free" %}
+  {% else %}
+{% endcase %}
+
 <html lang="en">
   <head>
     {% include head.html %}
+    {% if page_type %}
+      {% include tracker.html %}
+    {% endif %}
   </head>
 
   <body class="flex flex-col min-h-screen font-roboto">
