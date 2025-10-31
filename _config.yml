@@ -43,29 +43,20 @@ collections:
 
 tiers:
   bottom:
-    - 1 month availablity
     - One photo
     - Free of charge
-    - Rich text editor
-    - Chat support
     - No family tree
-    - Basic formatting
+    - 1 month availablity
   middle:
-    - Lifetime availablity
     - Several photos
     - Step by step AI guide
-    - Final edit assistance
-    - Phone and chat support
     - No family tree
-    - Standard formatting
-  top:
     - Lifetime availablity
+  top:
     - Many photos
     - Interview family & friends
-    - Journalist obituary editor
-    - Phone and chat support
     - Custom family tree
-    - Premium formatting
+    - Lifetime availablity
 
 # applies pretty for all
 permalink: pretty
