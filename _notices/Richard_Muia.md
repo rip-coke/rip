@@ -25,19 +25,19 @@ comments: true
     </div>
 
     <main id="main" class="flex-1 overflow-y-scroll">
-      <h1 id="early" class="pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Early Life and Roots </h1>
+      <h1 id="early" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Early Life and Roots </h1>
 
         <p class='py-2'>
         From an early age, Richard Muia displayed a sharp mind and a curious spirit, often inviting debate and challenging ideas. This sense of leadership would become a hallmark of his life. Born on April 12, 1953, in Mbiuni, Machakos County, he was the firstborn son of the late Simon Muia and Elizabeth Nduku. As the eldest in a large family, he bore significant responsibility for his siblings: Pius Nzoka Muia, Michael Muia, Kaloki Muia, the late Gregory Kavita, the late Patrick Mutinda, Teresiah Mbula, Bridgit Muli, Philomena Kalondu Mutiso, and Catherine Mueni Mutuku. Known for his dogged determination, a strong sense of justice, and an admired stoicism, Richard knew exactly what he stood for. While some perceived him as headstrong or even stubborn, he simply possessed an unwavering clarity about his boundaries. 
         </p>
 
-        <h1 id="tree" class="pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Family Tree </h1>
+        <h1 id="tree" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Family Tree </h1>
 
         <p class="relative w-full">
           <img src="/assets/images/Richard_Muia_tree.png" alt="family tree picture for {{page.name}}">
         </p>
 
-        <h1 id="education" class="pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Education and Formation </h1>
+        <h1 id="education" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Education and Formation </h1>
 
         <p class='py-2'>
         Richard’s academic journey started in the local schools in Mbiuni, Machakos County, a walking distance away. He then proceeded to Kabaa High School and then Kapsabet Boys’ High School, a bus-ride away, where he completed his A-levels. Most of his teachers remember him because even in those formative years, his academic excellence and leadership stood out. 
@@ -59,7 +59,7 @@ comments: true
         He was now called Daktari amongst his friends, an ode, not just to his professional expertise, but to the deep respect and trust people had in him.
         </p>
 
-        <h1 id="work" class="pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Professional Life and Vision</h1>
+        <h1 id="work" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Professional Life and Vision</h1>
 
         <p class='py-2'>
         Dr. Muia dedicated over four decades to veterinary science and agricultural development. He began his career at the Kenya Agricultural Research Institute (KARI), where he worked as a research scientist focusing on immunity and the biochemistry of East Coast Fever.
@@ -81,7 +81,7 @@ comments: true
         His career mission was simple but profound: to uplift farmers, build food systems and livestock trade, and improve livelihoods through knowledge. 
         </p>
 
-        <h1 id="family" class="pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Family and Personal Life </h1>
+        <h1 id="family" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Family and Personal Life </h1>
 
         <p class='py-2'>
         Richard was introduced to his wife Emma Wambui Muia by their mutual friend the late Joyce Ciira and the connection blossomed into a lasting partnership resulting in 42 years of marriage. He was a loving husband and a proud father, deeply committed to the welfare of his loved ones. 
@@ -95,13 +95,13 @@ comments: true
         To his family, Richard was a protector, a teacher, a mentor, and a steady source of strength. 
         </p>
 
-        <h1 id="faith" class="pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Faith, Fellowship and Community  </h1>
+        <h1 id="faith" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Faith, Fellowship and Community  </h1>
 
         <p class='py-2'> 
         Richard was a man of quiet but steadfast faith. He was baptised and confirmed in the Catholic Church, and for many years was an active member of the Catholic community. While living in Lang’ata, he joined a vibrant prayer fellowship known as Southlands HGF, where he built meaningful spiritual friendships and remained grounded in shared devotion and prayer. He attended services at Nairobi Baptist Church, where he found a welcoming community, briefly joined the media team, and continued to deepen his walk with God. 
         </p>
 
-        <h1 id="roots" class="pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Return to His Roots </h1>
+        <h1 id="roots" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Return to His Roots </h1>
 
         <p class='py-2'>
         In 2020, on announcement of the COVID-19 lockdown, Daktari and his wife made a significant move, relocating from Lang’ata, where the family had lived for over 30 years, to their home in Nditha, the very place where Richard had begun his early life.
@@ -115,7 +115,7 @@ comments: true
         Beyond livestock, Richard had a passion for trees. He was fiercely dedicated to planting for greenery and also spent many days nurturing orange and mango trees, envisioning a flourishing orchard. His family remains committed to keeping this legacy alive, continuing to care for the land, the trees, and the vision he planted with so much heart.
         </p>
 
-        <h1 id="pass" class="pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Illness and Passing </h1>
+        <h1 id="pass" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black"> Illness and Passing </h1>
 
         <p class='py-2'>
         In his final days, Dr. Muia faced a brief illness with the same quiet resilience that had defined his life. On the early morning of Tuesday, 13th May, he asked to be taken to hospital after experiencing pain on his left side, coupled with a suspected pneumonia and strained breathing. He was initially seen at a local healthcare facility before being quickly transferred to MP Shah Hospital in Parklands, Nairobi.

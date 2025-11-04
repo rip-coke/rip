@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ['ubuntu-regular', 'Roboto', 'sans-serif']
+        roboto: ['ubuntu-regular', 'Roboto', 'sans-serif'],
+        playfair: ['Playfair Display', 'serif']
       }
     },
   },
