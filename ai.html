@@ -14,6 +14,7 @@ permalink: /ai
     const popup = new PaystackPop();
     var url = "<%= html_escape(home_verify_url('code')) %>"
     var form = document.getElementById("obituaryForm");
+    var email = document.getElementById("email");
     
     async function handleSubmit(event) {
       event.preventDefault();
@@ -23,8 +24,8 @@ permalink: /ai
       
       popup.newTransaction({
           key: "{{site.paystack_public_key}}",
-          email: 'sample@email.com',
-          amount: 1000000,
+          email: email.value,
+          amount: 500000,
           onSuccess: (transaction) => {
             data.append("transaction", JSON.stringify(transaction))
             fetch(event.target.action, {

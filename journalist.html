@@ -10,6 +10,7 @@ permalink: /journalist
     const popup = new PaystackPop();
     var url = "<%= html_escape(home_verify_url('code')) %>"
     var form = document.getElementById("obituaryForm");
+    var email = document.getElementById("email");
     
     async function handleSubmit(event) {
       event.preventDefault();
@@ -19,7 +20,7 @@ permalink: /journalist
       
       popup.newTransaction({
           key: "{{site.paystack_public_key}}",
-          email: 'sample@email.com',
+          email: email.value,
           amount: 7000000,
           onSuccess: (transaction) => {
             data.append("transaction", JSON.stringify(transaction))
