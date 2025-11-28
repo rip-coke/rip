@@ -12,22 +12,22 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : ""
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Remember your loved ones"
+url                      : "https://rip.ke" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+logo                     : "assets/images/rip.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : "Remember your loved ones" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
@@ -67,8 +67,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
-search                   : # true, false (default)
+  hide                   : true # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
@@ -105,9 +105,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : G-CH99TD29T7
     anonymize_ip         : # true, false (default)
 
 
@@ -143,10 +143,10 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://x.com/rip_kenya"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://facebook.com/762918933575687"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url:
@@ -158,8 +158,8 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
-  since: "2013"
+      url: "https://instagram.com/rip.kenya"
+  since: "2025"
 
 
 # Reading Files
@@ -226,6 +226,9 @@ sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
+postcss:
+  cache: false
+
 
 # Outputting
 permalink: /:categories/:title/
@@ -233,7 +236,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Pagination with jekyll-paginate
-paginate: 5 # amount of posts to show
+paginate: 6 # amount of posts to show
 paginate_path: /page:num/
 
 # Pagination with jekyll-paginate-v2
@@ -265,6 +268,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-postcss
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -273,6 +277,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-postcss
 
 
 # Archives
@@ -320,8 +325,42 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
+      author_profile: false
+      read_time: false
       comments: # true
-      share: true
-      related: true
+      share: false
+      related: false
+
+tiers:
+  bottom:
+    - Includes one photo
+    - Basic Funeral Details
+    - Instant Digital Sharing Link
+    - Visible for 72 Hours
+    - 
+  middle:
+    - Forever Online
+    - Photo Gallery (10 Photos)
+    - Guided Writing Helper
+    - Official Social Media Post
+    - Shareable Memory Book
+  top:
+    - Life Story by Journalist
+    - Memorial Tree Planted
+    - Comprehensive Family Tree
+    - Dedicated Account Manager
+    - Premium Homepage Feature
+
+head_scripts:
+  - https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js
+  - https://js.paystack.co/v2/inline.js
+  - https://unpkg.com/trix@2.0.8/dist/trix.umd.min.js
+
+style_sheets:
+  - https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css
+  - https://unpkg.com/trix@2.0.8/dist/trix.css
+
+after_footer_scripts:
+  - assets/js/options.js
+
+paystack_public_key: pk_live_2c769d994c26ced6f350b2b9fe7a6a47fae3f958

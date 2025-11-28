@@ -1,0 +1,559 @@
+---
+layout: default
+desc: Follow the Artificial Intelligence step by step guide to post the obituary.
+title: AI Obituary Guide | Rip.ke
+permalink: /ai_guide
+---
+<div class="container">
+    <div class="header">
+        <h1>📝 Obituary & Tribute Writing Guide</h1>
+        <p>A compassionate, step-by-step guide to honor a life well-lived</p>
+    </div>
+    
+    <div class="content">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        
+        <!-- Step 1: Setup Questions -->
+        <div class="step active" id="step1">
+            <div class="question-group">
+                <h3>What style of tribute are you writing?</h3>
+                <div class="options" id="tributeType">
+                    <div class="option" data-value="obituary">
+                        <h4>Obituary</h4>
+                        <p>Traditional published obituary for online publication</p>
+                    </div>
+                    <div class="option" data-value="eulogy">
+                        <h4>Eulogy/Speech</h4>
+                        <p>Spoken tribute for funeral or memorial service</p>
+                    </div>
+                    <div class="option" data-value="memorial">
+                        <h4>Memorial Program</h4>
+                        <p>Written piece for service programs or memorial displays</p>
+                    </div>
+                    <div class="option" data-value="online">
+                        <h4>Online Tribute</h4>
+                        <p>For funeral home websites, social media, or memorial websites</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question-group">
+                <h3>What tone would you like to achieve?</h3>
+                <div class="options" id="toneType">
+                    <div class="option" data-value="formal">
+                        <h4>Formal & Traditional</h4>
+                        <p>Respectful, conventional language following traditional obituary format</p>
+                    </div>
+                    <div class="option" data-value="warm">
+                        <h4>Warm & Personal</h4>
+                        <p>Heartfelt, intimate tone that captures personality and relationships</p>
+                    </div>
+                    <div class="option" data-value="celebratory">
+                        <h4>Celebratory & Uplifting</h4>
+                        <p>Focusing on joy, accomplishments, and positive memories</p>
+                    </div>
+                    <div class="option" data-value="spiritual">
+                        <h4>Spiritual & Reflective</h4>
+                        <p>Incorporating faith, hope, and spiritual perspective on life and death</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question-group">
+                <h3>What length are you aiming for?</h3>
+                <div class="options" id="lengthType">
+                    <div class="option" data-value="brief">
+                        <h4>Brief & Concise</h4>
+                        <p>Essential information only (100-200 words)</p>
+                    </div>
+                    <div class="option" data-value="moderate">
+                        <h4>Moderate Length</h4>
+                        <p>Balanced coverage of life and personality (200-400 words)</p>
+                    </div>
+                    <div class="option" data-value="comprehensive">
+                        <h4>Comprehensive & Detailed</h4>
+                        <p>Thorough life story with rich details (400+ words)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Step 2: Information Gathering -->
+        <div class="step" id="step2">
+            <h3>📋 Information Gathering</h3>
+            <p>Let's collect the essential information you'll need. Don't worry if you don't have everything right now - you can fill in details as you go.</p>
+            
+            <div class="guide-section">
+                <h4>Essential Information Checklist</h4>
+                <ul class="checklist" id="infoChecklist">
+                    <!-- Will be populated by JavaScript -->
+                </ul>
+            </div>
+            
+            <div class="tip">
+                <strong>Tip:</strong> <span id="gatheringTip">Gather information from family members, friends, and personal documents. Don't hesitate to ask others for their favorite memories or important details you might have missed.</span>
+            </div>
+        </div>
+        
+        <!-- Step 3: Structure & Outline -->
+        <div class="step" id="step3">
+            <h3>🏗️ Structure & Outline</h3>
+            <p>Based on your preferences, here's the recommended structure for your tribute:</p>
+            
+            <div id="structureGuide">
+                <!-- Will be populated by JavaScript -->
+            </div>
+            
+            <div class="tip">
+                <strong>Writing Tip:</strong> <span id="structureTip">Start with the most important information and work your way to supporting details. This ensures the essential elements are included even if space becomes limited.</span>
+            </div>
+        </div>
+        
+        <!-- Step 4: Writing Guide -->
+        <div class="step" id="step4">
+            <h3>✍️ Writing Your Tribute</h3>
+            <p>Now let's write each section step by step. Use the templates below as starting points and personalize them with your loved one's unique details.</p>
+            
+            <div id="writingTemplates">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- Step 5: Review & Finalize -->
+        <div class="step" id="step5">
+            <h3>✅ Review & Finalize</h3>
+            <p>Before you finalize your tribute, let's review it together to ensure it captures everything important.</p>
+            
+            <div class="guide-section">
+                <h4>Final Review Checklist</h4>
+                <ul class="checklist">
+                    <li>All essential facts are accurate (names, dates, places)</li>
+                    <li>Spelling and grammar have been double-checked</li>
+                    <li>The tone feels appropriate and consistent</li>
+                    <li>Important relationships and survivors are mentioned</li>
+                    <li>Key accomplishments and character traits are highlighted</li>
+                    <li>Service information is clear and complete</li>
+                    <li>The piece honors the person's life and legacy</li>
+                    <li>Family members have had a chance to review</li>
+                </ul>
+            </div>
+            
+            <div class="template-box">
+                <h5>Your Completed Tribute</h5>
+                <textarea id="finalTribute" placeholder="Your completed tribute will appear here, or you can paste it in for final review..."></textarea>
+            </div>
+            
+            <div class="tip">
+                <strong>Final Tip:</strong> Remember that this tribute is a gift to both your loved one's memory and to everyone who knew them. It doesn't have to be perfect - it just needs to come from the heart and honor their life with dignity and love.
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <button class="btn btn-secondary" id="prevBtn" onclick="previousStep()" disabled>Previous</button>
+            <button class="btn" id="nextBtn" onclick="nextStep()">Next</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    let currentStep = 1;
+    const totalSteps = 5;
+    let userPreferences = {};
+
+    function updateProgress() {
+        const progress = (currentStep / totalSteps) * 100;
+        document.getElementById('progressFill').style.width = progress + '%';
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function showStep(step) {
+        // Hide all steps
+        document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+        // Show current step
+        document.getElementById(`step${step}`).classList.add('active');
+        
+        // Update navigation buttons
+        document.getElementById('prevBtn').disabled = step === 1;
+        document.getElementById('nextBtn').textContent = step === totalSteps ? 'Complete' : 'Next';
+        document.getElementById('nextBtn').disabled = step === 1 && !canProceedFromStep1();
+        
+        updateProgress();
+    }
+
+    function canProceedFromStep1() {
+        return userPreferences.tributeType && userPreferences.toneType && userPreferences.lengthType;
+    }
+
+    function nextStep() {
+        if (currentStep === 1 && !canProceedFromStep1()) {
+            alert('Please make selections for all three questions before proceeding.');
+            return;
+        }
+        
+        if (currentStep < totalSteps) {
+            currentStep++;
+            if (currentStep === 2) generateInformationGuide();
+            if (currentStep === 3) generateStructureGuide();
+            if (currentStep === 4) generateWritingTemplates();
+            showStep(currentStep);
+        } else {
+            alert('Guide completed! Your tribute is ready for use.');
+            fetch('https://admin.rip.ke//verified', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    user: window.location.href,
+                    content: document.getElementById('finalTribute').value
+                })
+            })
+            .then(response => response)
+            .then(data => console.log('Success:', data))
+            .catch(error => console.error('Error:', error));
+        }
+    }
+
+    function previousStep() {
+        if (currentStep > 1) {
+            currentStep--;
+            showStep(currentStep);
+        }
+    }
+
+    // Handle option selection
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.option')) {
+            const option = e.target.closest('.option');
+            const optionGroup = option.parentElement;
+            const groupId = optionGroup.id;
+            
+            // Remove selected class from siblings
+            optionGroup.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+            // Add selected class to clicked option
+            option.classList.add('selected');
+            
+            // Store user preference
+            const value = option.dataset.value;
+            if (groupId === 'tributeType') userPreferences.tributeType = value;
+            if (groupId === 'toneType') userPreferences.toneType = value;
+            if (groupId === 'lengthType') userPreferences.lengthType = value;
+            
+            // Enable next button if all selections made
+            if (currentStep === 1) {
+                document.getElementById('nextBtn').disabled = !canProceedFromStep1();
+            }
+        }
+    });
+
+    function generateInformationGuide() {
+        const checklist = document.getElementById('infoChecklist');
+        const tip = document.getElementById('gatheringTip');
+        
+        let items = [
+            'Full name (including maiden name if applicable)',
+            'Date and place of birth',
+            'Date and place of death',
+            'Names of parents',
+            'Spouse information (current and/or predeceased)',
+            'Children and their locations',
+            'Grandchildren and great-grandchildren',
+            'Siblings',
+            'Career and professional achievements',
+            'Education background',
+            'Hobbies and interests',
+            'Community involvement and volunteer work',
+            'Religious affiliation (if applicable)',
+            'Funeral/memorial service details'
+        ];
+
+        if (userPreferences.tributeType === 'eulogy') {
+            items.push('Personal anecdotes and favorite memories');
+            items.push('Personality traits and characteristics');
+            items.push('Impact on others\' lives');
+            tip.textContent = 'For a eulogy, focus on gathering personal stories and memories that illustrate who this person was, not just what they did. Ask family and friends for their favorite memories.';
+        } else if (userPreferences.tributeType === 'obituary') {
+            items.push('Organizations and memberships');
+            items.push('Where to send donations in lieu of flowers');
+            tip.textContent = 'For obituaries, accuracy is crucial as this becomes a permanent public record. Double-check all dates, names, and spellings with family members.';
+        }
+
+        checklist.innerHTML = items.map(item => `<li>${item}</li>`).join('');
+    }
+
+    function generateStructureGuide() {
+        const structureGuide = document.getElementById('structureGuide');
+        const tip = document.getElementById('structureTip');
+        
+        let structure = [];
+        
+        if (userPreferences.tributeType === 'obituary') {
+            structure = [
+                { title: 'Opening Statement', content: 'Name, age, date and place of death, brief description' },
+                { title: 'Family Information', content: 'Survivors and predeceased family members' },
+                { title: 'Life Summary', content: 'Birth, career, achievements, interests' },
+                { title: 'Service Information', content: 'Funeral/memorial details and donation information' }
+            ];
+            tip.textContent = 'Obituaries typically follow this traditional format. Start with the most crucial information first in case space limitations require cutting from the end.';
+        } else if (userPreferences.tributeType === 'eulogy') {
+            structure = [
+                { title: 'Personal Introduction', content: 'Your relationship to the deceased and opening tribute' },
+                { title: 'Character and Personality', content: 'What made them special and unique' },
+                { title: 'Life Stories', content: '2-3 meaningful anecdotes that illustrate their character' },
+                { title: 'Impact and Legacy', content: 'How they touched others\' lives and what they leave behind' },
+                { title: 'Closing Tribute', content: 'Final words of love, gratitude, or goodbye' }
+            ];
+            tip.textContent = 'For eulogies, focus on storytelling and emotional connection. Practice reading it aloud before the service to ensure good pacing and emotional readiness.';
+        } else if (userPreferences.tributeType === 'memorial') {
+            structure = [
+                { title: 'Commemorative Opening', content: 'Name, dates, and celebratory statement' },
+                { title: 'Life Highlights', content: 'Key achievements, roles, and passions' },
+                { title: 'Personal Qualities', content: 'Character traits and what made them beloved' },
+                { title: 'Cherished Memories', content: 'Brief, meaningful stories or quotes' }
+            ];
+            tip.textContent = 'Memorial program tributes should be concise but meaningful, as people will read them during the service and keep them as mementos.';
+        } else { // online
+            structure = [
+                { title: 'Heartfelt Opening', content: 'Name, dates, and warm introduction' },
+                { title: 'Life Journey', content: 'Key life events, achievements, and interests' },
+                { title: 'Personal Touch', content: 'Stories, personality traits, and relationships' },
+                { title: 'Continuing Legacy', content: 'How their memory lives on and invitation for others to share' }
+            ];
+            tip.textContent = 'Online tributes can be more personal and interactive. Consider including an invitation for others to share their own memories and photos.';
+        }
+
+        structureGuide.innerHTML = structure.map((section, index) => `
+            <div class="guide-section">
+                <h4>Section ${index + 1}: ${section.title}</h4>
+                <p>${section.content}</p>
+            </div>
+        `).join('');
+    }
+
+    function generateWritingTemplates() {
+        const templatesContainer = document.getElementById('writingTemplates');
+        
+        const tone = userPreferences.toneType;
+        const type = userPreferences.tributeType;
+        const length = userPreferences.lengthType;
+        
+        let sections = [];
+        
+        // Core sections that appear for all types
+        sections.push({
+            title: 'Basic Information',
+            prompts: [
+                'What was their full name (including maiden name if applicable)?',
+                'When and where were they born?',
+                'When did they pass away?',
+                'Where did they live most recently?',
+                'What was their age at passing?'
+            ],
+            template: '[Full Name], age [age], of [city], passed away [peacefully/suddenly] on [date] at [location]. [He/She] was born on [birth date] in [birth location] to [parents\' names].',
+            placeholder: 'Write the basic facts about your loved one here...'
+        });
+
+        sections.push({
+            title: 'Family & Relationships',
+            prompts: [
+                'Who was their spouse or life partner?',
+                'How long were they married/together?',
+                'What are the names of their children?',
+                'Do they have grandchildren or great-grandchildren?',
+                'Who are their siblings?',
+                'Are there parents, spouse, or siblings who passed before them?',
+                'What family relationships were most important to them?'
+            ],
+            template: '[Name] is survived by [his/her] beloved [relationship] of [years] years, [spouse name]; children [names and locations]; [number] grandchildren; and siblings [names]. [He/She] was preceded in death by [names and relationships].',
+            placeholder: 'Describe their family relationships and survivors here...'
+        });
+
+        sections.push({
+            title: 'Life Story & Career',
+            prompts: [
+                'What did they do for work or career?',
+                'How long did they work in their profession?',
+                'What were they most proud of professionally?',
+                'What was their educational background?',
+                'Did they own a business or have any notable achievements?',
+                'What roles did they play in their community?'
+            ],
+            template: '[Name] worked as a [profession] for [number] years at [company/organization]. [He/She] was known for [professional qualities]. [Add education, or business ownership if applicable].',
+            placeholder: 'Tell their professional and life story here...'
+        });
+
+        sections.push({
+            title: 'Personality & Character',
+            prompts: [
+                'What three words best describe their personality?',
+                'What did people love most about them?',
+                'What were their best qualities as a person?',
+                'How did they show love to others?',
+                'What made them laugh?',
+                'What were they passionate about?',
+                'How did they handle challenges in life?',
+                'What wisdom did they share with others?'
+            ],
+            template: '[Name] will be remembered for [his/her] [quality 1], [quality 2], and [quality 3]. [He/She] had a gift for [specific talent/way of being] and always [characteristic behavior].',
+            placeholder: 'Describe who they were as a person...'
+        });
+
+        sections.push({
+            title: 'Hobbies & Interests',
+            prompts: [
+                'What did they love to do in their free time?',
+                'Did they have any special talents or skills?',
+                'What sports did they play or follow?',
+                'Did they enjoy traveling? Where did they go?',
+                'What were their favorite activities with family/friends?',
+                'Did they collect anything?',
+                'Were they involved in any clubs or organizations?',
+                'Did they volunteer anywhere?'
+            ],
+            template: 'In [his/her] free time, [Name] enjoyed [hobby 1], [hobby 2], and [hobby 3]. [He/She] was an active member of [organizations] and loved [specific activities].',
+            placeholder: 'Share their hobbies and interests here...'
+        });
+
+        if (type === 'eulogy' || length === 'comprehensive') {
+            sections.push({
+                title: 'Special Memories & Stories',
+                prompts: [
+                    'What\'s a favorite family story about them?',
+                    'What tradition did they start or maintain?',
+                    'What\'s something funny they used to say or do?',
+                    'What\'s a moment that perfectly captures who they were?',
+                    'What story would make people smile when they think of them?',
+                    'What was their proudest moment?',
+                    'How did they celebrate special occasions?',
+                    'What legacy do they leave behind?'
+                ],
+                template: 'One of the most cherished memories of [Name] is [specific story]. [He/She] also [another meaningful detail that shows their character].',
+                placeholder: 'Share a special memory or story that captures their essence...'
+            });
+        }
+
+        if (userPreferences.toneType === 'spiritual') {
+            sections.push({
+                title: 'Faith & Spirituality',
+                prompts: [
+                    'What was their faith or spiritual belief?',
+                    'What church or religious community were they part of?',
+                    'How did their faith influence their life?',
+                    'What comfort can be found in their beliefs?',
+                    'Did they have favorite scriptures or spiritual sayings?',
+                    'How did they serve through their faith?'
+                ],
+                template: '[Name] was a person of deep faith and was an active member of [religious community]. [His/Her] faith guided [him/her] through life and brought comfort to [his/her] family.',
+                placeholder: 'Describe their faith and spiritual life...'
+            });
+        }
+
+        sections.push({
+            title: 'Service Information',
+            prompts: [
+                'When and where will the funeral or memorial service be held?',
+                'Will there be a viewing or visitation? When?',
+                'Where will the burial or interment take place?',
+                'Are there any special instructions (flowers, donations)?',
+                'Who is handling the funeral arrangements?',
+                'Is there a preferred charity for memorial donations?',
+                'Are there any special requests from the family?'
+            ],
+            template: 'A [funeral service/memorial service/celebration of life] will be held on [date] at [time] at [location]. [Burial/Interment] will follow at [cemetery]. In lieu of flowers, the family requests donations to [charity/organization].',
+            placeholder: 'Provide service details and any special requests...'
+        });
+
+        // Generate HTML for each section
+        templatesContainer.innerHTML = sections.map((section, index) => `
+            <div class="guide-section">
+                <h4>${section.title}</h4>
+                <div style="margin-bottom: 20px;">
+                    <h5 style="color: #333; margin-bottom: 10px;">Questions to Consider:</h5>
+                    <ul style="list-style-type: disc; padding-left: 20px; margin-bottom: 15px;">
+                        ${section.prompts.map(prompt => `<li style="margin-bottom: 5px;">${prompt}</li>`).join('')}
+                    </ul>
+                </div>
+                
+                <div class="template-box">
+                    <h5>Example Format:</h5>
+                    <p style="font-style: italic; margin-bottom: 15px; color: #666;">${section.template}</p>
+                    <h5>Write Your Version:</h5>
+                    <textarea id="section${index}" placeholder="${section.placeholder}" style="min-height: 120px;" onchange="updateFinalTribute()"></textarea>
+                </div>
+            </div>
+        `).join('');
+
+        // Add final assembly section
+        templatesContainer.innerHTML += `
+            <div class="guide-section">
+                <h4>🎯 Putting It All Together</h4>
+                <p>As you complete each section above, your full tribute will automatically appear below. Feel free to edit and rearrange as needed.</p>
+                <div class="template-box">
+                    <h5>Your Complete Tribute Preview:</h5>
+                    <textarea id="completePreview" placeholder="Your complete tribute will appear here as you fill in the sections above..." style="min-height: 300px;"></textarea>
+                </div>
+                <div class="tip">
+                    <strong>Next Steps:</strong> Review your tribute for flow and completeness. Consider having family members read it over before finalizing. Remember, this is a loving tribute - it doesn't need to be perfect, just heartfelt.
+                </div>
+            </div>
+        `;
+    }
+
+    function updateFinalTribute() {
+        const sections = document.querySelectorAll('#writingTemplates textarea[id^="section"]');
+        let completeText = '';
+        
+        sections.forEach((textarea, index) => {
+            if (textarea.value.trim()) {
+                completeText += textarea.value.trim() + '\n\n';
+            }
+        });
+        
+        document.getElementById('completePreview').value = completeText.trim();
+        document.getElementById('finalTribute').value = completeText.trim();
+    }
+
+    function handlePhotoUpload(input, previewId) {
+        const file = input.files[0];
+        if (file) {
+            // Check file size (limit to 5MB)
+            if (file.size > 5 * 1024 * 1024) {
+                alert('Photo size must be less than 5MB. Please choose a smaller file.');
+                input.value = '';
+                return;
+            }
+            
+            // Check file type
+            if (!file.type.startsWith('image/')) {
+                alert('Please select an image file (JPG, PNG, GIF).');
+                input.value = '';
+                return;
+            }
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const preview = document.getElementById(previewId);
+                preview.innerHTML = `
+                    <img src="${e.target.result}" alt="Uploaded photo">
+                    <button class="remove-photo" onclick="removePhoto('${input.id}', '${previewId}')">×</button>
+                `;
+                preview.style.position = 'relative';
+            };
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function removePhoto(inputId, previewId) {
+        document.getElementById(inputId).value = '';
+        document.getElementById(previewId).innerHTML = `
+            <span class="upload-text">📷<br>Click to upload<br>Photo ${inputId.slice(-1)}</span>
+        `;
+        document.getElementById(previewId).style.position = 'static';
+    }
+
+    // Initialize
+    showStep(1);
+</script>
