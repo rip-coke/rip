@@ -1,10 +1,9 @@
 ---
 layout: archive
+comments: true
 ---
 
 {{ content }}
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% if paginator %}
   {% assign posts = paginator.posts %}
@@ -14,7 +13,24 @@ layout: archive
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html entries=posts type=entries_layout %}
+  <div class="mx-auto mt-3 grid max-w-2xl grid-cols-1 gap-x-4 gap-y-4 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+    
+    {% include documents-collection.html entries=posts type=entries_layout %}
+    
+  </div>
 </div>
 
 {% include paginator.html %}
+
+{% if site.comments.provider and page.comments %}
+  {% if jekyll.environment == 'production' %}
+    {% include comments.html %}
+  {% else %}
+    <p>
+      Comments are configured with provider: <strong>{{ site.comments.provider }}</strong>,
+      but are disabled in non-production environments.
+    </p>
+  {% endif %}
+{% endif %}
+
+
