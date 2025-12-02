@@ -10,7 +10,7 @@ comments: true
 ---
 
 <div class="sticky top-0 z-50">
-        <label for="tabs" class="sr-only">Select your country</label>
+        <label for="tabs" class="sr-only">Select your section</label>
         <select id="tabs" class="appearance-none bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             <option value="early">Early Life and Roots</option>
             <option value="tree">Family Tree</option>
