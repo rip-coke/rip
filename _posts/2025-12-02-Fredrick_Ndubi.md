@@ -10,6 +10,9 @@ x: https://x.com/rip_kenya/status/1996074274134929576
 user: 2
 layout: post
 comments: true
+header:
+  image: /assets/images/Fredrick_Ndubi.jpg
+excerpt: Fredrick Mang’ana Ndubi (20 Dec 48 - 05 Dec 25)
 ---
 
 <div class="sticky top-0 z-50">
