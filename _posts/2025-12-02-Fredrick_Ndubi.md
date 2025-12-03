@@ -4,6 +4,9 @@ dob: 1948-12-20
 dod: 2025-12-05
 county: Nairobi
 pic: /assets/images/Fredrick_Ndubi.jpg
+fb: https://web.facebook.com/permalink.php?story_fbid=pfbid02YGZcRUTLkvknEH7yWcS6KPRivZ44hbV775hidXLbwzp6HJgJaqdqrEdcJydBjtxkl&id=61580368161016
+insta: https://www.instagram.com/p/DRyboSgAojr
+x: https://x.com/rip_kenya/status/1996074274134929576
 user: 2
 layout: post
 comments: true
