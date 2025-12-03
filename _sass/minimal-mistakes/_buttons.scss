@@ -40,9 +40,11 @@
   /* brands */
   (bluesky, $bluesky-color),
   (facebook, $facebook-color),
+  (instagram, $instagram-color),
   (linkedin, $linkedin-color),
   (mastodon, $mastodon-color),
   (twitter, $twitter-color),
+  (whatsapp, $whatsapp-color),
   (x, $x-color);
 
   @each $buttoncolor, $color in $buttoncolors {
