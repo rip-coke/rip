@@ -7,6 +7,9 @@ pic: /assets/images/Richard_Muia.jpg
 user: 2
 layout: post
 comments: true
+header:
+  image: /assets/images/Richard_Muia.jpg
+excerpt: Richard Muia (12 Apr 53 - 19 May 25)
 ---
 
 <div class="sticky top-0 z-50">
