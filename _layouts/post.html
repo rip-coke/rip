@@ -123,53 +123,7 @@ layout: archive-post
               </div>
               
             </div>
-
-            <script>
-              (function(){
-                const detailsBtn = document.getElementById('tab-details-btn');
-                const notesBtn = document.getElementById('tab-notes-btn');
-                const details = document.getElementById('tab-details');
-                const notes = document.getElementById('tab-notes');
-
-                function showDetails(){
-                  details.classList.remove('hidden');
-                  notes.classList.add('hidden');
-                  detailsBtn.classList.add('border-yellow-500','text-gray-900');
-                  notesBtn.classList.remove('border-yellow-500','text-gray-900');
-                  detailsBtn.setAttribute('aria-selected','true');
-                  notesBtn.setAttribute('aria-selected','false');
-                }
-                function showNotes(){
-                  notes.classList.remove('hidden');
-                  details.classList.add('hidden');
-                  notesBtn.classList.add('border-yellow-500','text-gray-900');
-                  detailsBtn.classList.remove('border-yellow-500','text-gray-900');
-                  notesBtn.setAttribute('aria-selected','true');
-                  detailsBtn.setAttribute('aria-selected','false');
-                }
-
-                detailsBtn.addEventListener('click', showDetails);
-                notesBtn.addEventListener('click', showNotes);
-              })();
-            </script>
           </div>
-          <script>
-            var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            });
-          </script>
         </div>
       </div>
     </div>
