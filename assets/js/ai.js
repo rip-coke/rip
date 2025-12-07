@@ -18,6 +18,10 @@ async function sendToFormspree(formEl) {
     // create a fresh FormData from the form element (so it can be reused elsewhere)
     const fsData = new FormData(formEl);
     fsData.delete('attachment');
+    fsData.delete('attachment_1');
+    fsData.delete('attachment_2');
+    fsData.delete('attachment_3');
+    fsData.delete('attachment_4');
     fsData.delete('message');
     const resp = await fetch('https://formspree.io/f/xwpoeark', {
       method: 'POST',
@@ -129,6 +133,8 @@ function initializeForm() {
 
   async function handleSubmit(event) {
     event.preventDefault();
+
+    document.getElementById('submitSpinner').classList.remove('hidden');
 
     var status = document.getElementById("obituaryFormStatus");
     var data = new FormData(event.target);
