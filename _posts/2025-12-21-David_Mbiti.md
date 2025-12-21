@@ -81,15 +81,15 @@ His academic journey was not merely about certificates, but about building the d
 <ul>
 <li> <span class="font-semibold"> Quick Connection Services </span>
 
-    Beginning his professional career with dedication and commitment to excellence
+Beginning his professional career with dedication and commitment to excellence
 </li>
 <li> <span class="font-semibold"> United Telkom </span>
  
-    Contributing his skills in telecommunications and building lasting professional relationships
+Contributing his skills in telecommunications and building lasting professional relationships
 </li>
 <li> <span class="font-semibold"> ZOE </span>
 
-    Serving communities with thoughtfulness and quiet commitment
+Serving communities with thoughtfulness and quiet commitment
 </li>
 </ul>
 <p class='py-2'>
@@ -115,20 +115,20 @@ future, their wellbeing, and the values he hoped to pass on to them: integrity, 
 <ul>
 <li> <span class="font-semibold"> Integrity </span>
 
-    Living with honesty and moral uprightness in all circumstances
+Living with honesty and moral uprightness in all circumstances
 </li>
 <li> <span class="font-semibold"> Humility </span>
 
-    Serving others without seeking recognition or praise
+Serving others without seeking recognition or praise
 </li>
 
 <li> <span class="font-semibold"> Resilience </span>
 
-    Enduring hardship with remarkable strength and determination
+Enduring hardship with remarkable strength and determination
 </li>  
 <li> <span class="font-semibold"> Faith </span>
 
-    Trusting in God through life's greatest challenges
+Trusting in God through life's greatest challenges
 </li>
 </ul>
 
@@ -160,13 +160,13 @@ As we mourn his passing, we also give thanks for having known him. We thank God 
 </p>
 
 <blockquote class="text-xl italic font-semibold tracking-tight text-heading">
-A Life Well Lived
+<div class="p-4 font-semibold">A Life Well Lived</div>
 
 May his soul rest in eternal peace, and may his family find comfort in knowing that David Ithali Mbiti lived a meaningful life and fought a good fight. His story does not end here; it lives on in all of us who loved him.
 </blockquote>
 
 
-<span class="p-4 font-semibold italic">2 Timothy 4:7</span>
+<div class="p-4 font-semibold italic">2 Timothy 4:7</div>
 
 <blockquote class="text-xl italic font-semibold tracking-tight text-heading">
 
@@ -177,15 +177,15 @@ Sleep Well, David
 <ul>
 <li> <i class="fas fa-heart"></i> <span class="font-semibold"> In Our Hearts </span>
 
-    Forever remembered for his quiet strength, unwavering love, and the profound impact he made on all who knew him
+Forever remembered for his quiet strength, unwavering love, and the profound impact he made on all who knew him
 </li>
 <li> <i class="fa-solid fa-family"></i> <span class="font-semibold"> In His Children </span>
 
-    His legacy continues through Moses, Michael, Mitchell, and Abigael, who carry forward his values and spirit
+His legacy continues through Moses, Michael, Mitchell, and Abigael, who carry forward his values and spirit
 </li>
 <li> <i class="fas fa-pray"></i> <span class="font-semibold"> In Eternal Peace </span>
 
-    At rest now from his earthly struggles, embraced by God's eternal love and grace
+At rest now from his earthly struggles, embraced by God's eternal love and grace
 </li>
 </ul>
 
