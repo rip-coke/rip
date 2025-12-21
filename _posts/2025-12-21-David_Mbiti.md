@@ -179,7 +179,7 @@ Sleep Well, David
 
 Forever remembered for his quiet strength, unwavering love, and the profound impact he made on all who knew him
 </li>
-<li> <i class="fa-solid fa-family"></i> <span class="font-semibold"> In His Children </span>
+<li> <i class="fa-solid fa-people-group"></i> <span class="font-semibold"> In His Children </span>
 
 His legacy continues through Moses, Michael, Mitchell, and Abigael, who carry forward his values and spirit
 </li>
