@@ -160,16 +160,16 @@ the lives of his children, who will forever carry his name and values forward.
 <p class='py-2'>
 As we mourn his passing, we also give thanks for having known him. We thank God for the years we shared with David, for the lessons his life taught us, and for the memories that will remain alive in our hearts.
 </p>
-  
-> ***A Life Well Lived***
-> 
-> May his soul rest in eternal peace, and may his family find comfort in knowing that David Ithali Mbiti lived a meaningful life and fought a good fight. His story does not end here; it lives on in all of us who loved him.
 
-***2 Timothy 4:7***
+A Life Well Lived
 
-> "You have fought the good fight, you have finished the race, you have kept the faith."
-> **Sleep Well, David**
-> 
+May his soul rest in eternal peace, and may his family find comfort in knowing that David Ithali Mbiti lived a meaningful life and fought a good fight. His story does not end here; it lives on in all of us who loved him.
+
+2 Timothy 4:7
+
+"You have fought the good fight, you have finished the race, you have kept the faith."
+Sleep Well, David
+
 <ul>
 <li> <i class="fas fa-heart"></i> In Our Hearts
 
@@ -184,5 +184,7 @@ As we mourn his passing, we also give thanks for having known him. We thank God 
     At rest now from his earthly struggles, embraced by God's eternal love and grace
 </li>
 </ul>
+
 </main>
+
 </div>
