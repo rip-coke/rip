@@ -178,12 +178,12 @@ May his soul rest in eternal peace, and may his family find comfort in knowing t
 <blockquote class="text-xl italic font-semibold tracking-tight text-heading">
 
 "You have fought the good fight, you have finished the race, you have kept the faith."
-<div>
+<div class="py-2">
 Sleep Well, David
 </div>
 </blockquote>
 
-<ul>
+<ul class="py-4">
 <li> <i class="fas fa-heart"></i> <span class="font-semibold"> In Our Hearts </span>
 <div >
 Forever remembered for his quiet strength, unwavering love, and the profound impact he made on all who knew him
