@@ -102,8 +102,6 @@ He did not seek praise, but his work spoke for him.
 
 <h1 id="father" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">A Father's Love and Courageous Battle</h1>
 
-
-
 <p class='py-2'>
 Above all, David was a father. He loved his children: Moses, Michael, Mitchell, and
 Abigael, with a depth that words can scarcely capture. 
@@ -167,12 +165,15 @@ A Life Well Lived
 May his soul rest in eternal peace, and may his family find comfort in knowing that David Ithali Mbiti lived a meaningful life and fought a good fight. His story does not end here; it lives on in all of us who loved him.
 </blockquote>
 
+
+<span class="">2 Timothy 4:7</span>
+
 <blockquote class="text-xl italic font-semibold tracking-tight text-heading">
-2 Timothy 4:7
 
 "You have fought the good fight, you have finished the race, you have kept the faith."
 Sleep Well, David
 </blockquote>
+
 <ul>
 <li> <i class="fas fa-heart"></i> In Our Hearts
 
