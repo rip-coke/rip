@@ -15,23 +15,36 @@ header:
 excerpt: David Ithali Mbiti (08 Nov 77 - 09 Dec 25)
 ---
 
+<main id="post_main" class="flex-1 overflow-y-scroll">
+  <h1 id="early" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">A life of Dignity and Perseverance.</h1>
+        <p class='py-2'>
 Celebrating the Life of David Ithali Mbiti. A beloved son, father, colleague, and friend
+</p>
+<p class='py-2'>
+  
 
-A Life of Dignity and Perseverance
-We gather here today with heavy hearts, yet with
-gratitude for a life that, though tested by great
-trials, was lived with dignity, perseverance, and
-quiet strength. We are here to celebrate and honour
+</p>
+<p class='py-2'>
+
+We gather here today with heavy hearts, yet with gratitude for a life that, though tested by great trials, was lived with dignity, perseverance, and quiet strength.
+
+</p>
+<p class='py-2'>
+We are here to celebrate and honour
 the life of David Ithali Mbiti, born on 8th
-November 1977, a beloved son, father, colleague,
-and friend.
-David was born to Mrs Elizabeth Karamburi and
-the late Mr Erastus Mbiti, who laid the foundation
-of values that shaped the man David became. From
-an early age, it was evident that David was a child of
-promise: curious, disciplined, and determined to
-make something meaningful of his life.
-Educational Journey
+November 1977, a beloved son, father, colleague, and friend.
+</p>
+<p class='py-2'>
+  
+David was born to Mrs Elizabeth Karamburi and the late Mr Erastus Mbiti, who laid the foundation of values that shaped the man David became. 
+</p>
+<p class='py-2'>
+From an early age, it was evident that David was a child of promise: curious, disciplined, and determined to make something meaningful of his life.
+
+</p>
+<p class='py-2'>
+<h1 id="edu" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">Educational Journey</h1>
+
 His educational journey reflects both resilience and adaptability. He began his schooling
 at Wanja and Kim Kindergarten, where his early character was shaped, before proceeding
 to Park Road Primary School. Later, he transferred to Makini School, a transition that
@@ -130,3 +143,5 @@ In Eternal Peace
 At rest now from his earthly
 struggles, embraced by
 God's eternal love and grace
+
+</main>
