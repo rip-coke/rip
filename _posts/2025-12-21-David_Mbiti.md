@@ -154,19 +154,26 @@ the lives of his children, who will forever carry his name and values forward.
 As we mourn his passing, we also give thanks for having known him. We thank God for the years we shared with David, for the lessons his life taught us, and for the memories that will remain alive in our hearts.
 </p>
   
-<h1 id="life" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">A Life Well Lived</h1>
-
-
-<p class='py-2'>
-May his soul rest in eternal peace, and may his family find comfort in knowing that
-David Ithali Mbiti lived a meaningful life and fought a good fight. His story does
-not end here; it lives on in all of us who loved him.
-</p>
+> ***A Life Well Lived***
+> 
+> May his soul rest in eternal peace, and may his family find comfort in knowing that David Ithali Mbiti lived a meaningful life and fought a good fight. His story does not end here; it lives on in all of us who loved him.
 
 ***2 Timothy 4:7***
 
 > "You have fought the good fight, you have finished the race, you have kept the faith."
 > **Sleep Well, David**
+
+- <i class="fas fa-heart"></i> In Our Hearts
+
+    Forever remembered for his quiet strength, unwavering love, and the profound impact he made on all who knew him
+  
+- <i class="fa-solid fa-family"></i> In His Children
+
+    His legacy continues through Moses, Michael, Mitchell, and Abigael, who carry forward his values and spirit
+
+- <i class="fas fa-pray"></i> In Eternal Peace
+
+    At rest now from his earthly struggles, embraced by God's eternal love and grace
 
 </main>
 </div>
