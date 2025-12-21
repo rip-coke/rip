@@ -14,9 +14,22 @@ header:
   image: /assets/images/david_mbiti.jpg
 excerpt: David Ithali Mbiti (08 Nov 77 - 09 Dec 25)
 ---
-
+<div class="sticky top-0 z-50">
+        <label for="tabs" class="sr-only">Select your section</label>
+        <select id="tabs" class="appearance-none bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option value="early">A life of Dignity and Perseverance</option>
+            <option value="edu">Educational Journey</option>
+            <option value="prof">Professional Life</option>
+            <option value="father">A Father's Love and Courageous Battle</option>
+            <option value="courage">Five Years of Courage</option>
+            <option value="legal">A Legacy That Lives On</option>
+                 <option value="life">A Life Well Lived</option>
+        </select>
+    </div>
+<div class="flex flex-col h-screen overflow-hidden">
+    
 <main id="post_main" class="flex-1 overflow-y-scroll">
-  <h1 id="early" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">A life of Dignity and Perseverance.</h1>
+  <h1 id="early" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">A life of Dignity and Perseverance</h1>
         <p class='py-2'>
 Celebrating the Life of David Ithali Mbiti. A beloved son, father, colleague, and friend
 </p>
@@ -45,103 +58,89 @@ From an early age, it was evident that David was a child of promise: curious, di
 <p class='py-2'>
 <h1 id="edu" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">Educational Journey</h1>
 
-His educational journey reflects both resilience and adaptability. He began his schooling
-at Wanja and Kim Kindergarten, where his early character was shaped, before proceeding
-to Park Road Primary School. Later, he transferred to Makini School, a transition that
-marked his ability to adjust and thrive in new environments. David went on to attend
-Kanyakine High School, where he continued to grow intellectually and socially, before
-pursuing higher education at Methodist University. His academic journey was not merely
-about certificates, but about building the discipline and perspective.
-Professional Life
-Quick Connection
-Services
-Beginning his
-professional career
-with dedication and
-commitment to
-excellence
-United Telkom
-Contributing his skills
-in telecommunications
-and building lasting
-professional
-relationships
-ZOE
-Serving communities
-with thoughtfulness
-and quiet commitment
-Those who worked alongside him knew him as dependable, thoughtful, and quietly
-2 committed to excellence. He did not seek praise, but his work spoke for him.
+<p class='py-2'>
+His educational journey reflects both resilience and adaptability. He began his schooling at Wanja and Kim Kindergarten, where his early character was shaped, before proceeding to Park Road Primary School. 
+  </p>
+<p class='py-2'>
+  
+Later, he transferred to Makini School, a transition that marked his ability to adjust and thrive in new environments. 
 
-A Father's Love and
-Courageous Battle
+</p>
+<p class='py-2'>
+
+David went on to attend Kanyakine High School, where he continued to grow intellectually and socially, before
+pursuing higher education at Methodist University. 
+</p>
+<p class='py-2'>
+
+His academic journey was not merely about certificates, but about building the discipline and perspective.
+</p>
+
+<h1 id="prof" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">Professional Life</h1>
+
+
+<p class='py-2'>
+Those who worked alongside him knew him as dependable, thoughtful, and quietly 2 committed to excellence. 
+</p>
+<p class='py-2'>
+
+He did not seek praise, but his work spoke for him.
+</p>
+
+<h1 id="father" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">A Father's Love and Courageous Battle</h1>
+
+
+
+<p class='py-2'>
 Above all, David was a father. He loved his children: Moses, Michael, Mitchell, and
-Abigael, with a depth that words can scarcely capture. They were his greatest joy and his
+Abigael, with a depth that words can scarcely capture. 
+</p>
+<p class='py-2'>
+They were his greatest joy and his
 strongest motivation. Even during difficult seasons, his thoughts were anchored on their
-future, their wellbeing, and the values he hoped to pass on to them: integrity, resilience,
-humility, and faith in God.
-Integrity
-Living with honesty and moral
-uprightness in all circumstances
-Humility
-Resilience
-Enduring hardship with remarkable
-strength and determination
-Serving others without seeking
-recognition or praise
-Faith
-Trusting in God through life's greatest
-challenges
-Five Years of Courage
-In 2020, David fell ill, beginning a long and
-courageous battle with sickness. For five years, he
-fought with remarkable endurance, demonstrating
-strength not just of body, but of spirit. Through
-pain, uncertainty, and exhaustion, he held on with
-courage that inspired everyone around him. On 9th
-December 2025, at 3:00 am, David peacefully rested,
-marking the end of his earthly journey and the
-beginning of eternal rest.
-David's life reminds us that strength is not always
-loud, and courage is not always dramatic.
-Sometimes, it is found in simply showing up each
-day, enduring quietly, and loving faithfully despite
-hardship. He leaves behind a legacy of
-perseverance, responsibility, and love, especially in
-the lives of his children, who will forever carry his
-name and values forward.
+future, their wellbeing, and the values he hoped to pass on to them: integrity, resilience, humility, and faith in God.
+</p>
 
-4
-A Legacy That Lives On
-As we mourn his passing, we also give thanks for having known him. We thank God for
-the years we shared with David, for the lessons his life taught us, and for the memories
-that will remain alive in our hearts.
-A Life Well Lived
+<h1 id="courage" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">Five Years of Courage</h1>
+
+
+<p class='py-2'>
+In 2020, David fell ill, beginning a long and courageous battle with sickness. For five years, he fought with remarkable endurance, demonstrating strength not just of body, but of spirit. 
+  </p>
+<p class='py-2'>
+  
+Through pain, uncertainty, and exhaustion, he held on with courage that inspired everyone around him. On 9th December 2025, at 3:00 am, David peacefully rested, marking the end of his earthly journey and the beginning of eternal rest.
+</p>
+<p class='py-2'>
+
+David's life reminds us that strength is not always loud, and courage is not always dramatic.
+</p>
+<p class='py-2'>
+
+Sometimes, it is found in simply showing up each day, enduring quietly, and loving faithfully despite hardship. He leaves behind a legacy of perseverance, responsibility, and love, especially in
+the lives of his children, who will forever carry his name and values forward.
+</p>
+
+<h1 id="legal" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">A Legacy That Lives On</h1>
+
+
+<p class='py-2'>
+As we mourn his passing, we also give thanks for having known him. We thank God for the years we shared with David, for the lessons his life taught us, and for the memories that will remain alive in our hearts.
+</p>
+  
+<h1 id="life" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">A Life Well Lived</h1>
+
+
+<p class='py-2'>
 May his soul rest in eternal peace, and may his family find comfort in knowing that
 David Ithali Mbiti lived a meaningful life and fought a good fight. His story does
 not end here; it lives on in all of us who loved him.
-2 Timothy 4:7
-"You have fought the good fight, you have finished
-the race, you have kept the faith."
-Sleep Well, David
-55
-In Our Hearts
-Forever remembered for his
-quiet strength, unwavering
-love, and the profound
-impact he made on all who
-knew him
-339
-In His Children
-His legacy continues
-through Moses, Michael,
-Mitchell, and Abigael, who
-carry forward his values
-and spirit
-&
-In Eternal Peace
-At rest now from his earthly
-struggles, embraced by
-God's eternal love and grace
+</p>
+
+***2 Timothy 4:7****
+
+> "You have fought the good fight, you have finished the race, you have kept the faith."
+> **Sleep Well, David**
 
 </main>
+</div>
