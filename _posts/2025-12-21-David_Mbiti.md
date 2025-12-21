@@ -1,0 +1,118 @@
+Celebrating the Life of
+David Ithali Mbiti
+8th November 1977 - 9th December 2025
+A beloved son, father, colleague, and friend
+
+A Life of Dignity and Perseverance
+We gather here today with heavy hearts, yet with
+gratitude for a life that, though tested by great
+trials, was lived with dignity, perseverance, and
+quiet strength. We are here to celebrate and honour
+the life of David Ithali Mbiti, born on 8th
+November 1977, a beloved son, father, colleague,
+and friend.
+David was born to Mrs Elizabeth Karamburi and
+the late Mr Erastus Mbiti, who laid the foundation
+of values that shaped the man David became. From
+an early age, it was evident that David was a child of
+promise: curious, disciplined, and determined to
+make something meaningful of his life.
+Educational Journey
+His educational journey reflects both resilience and adaptability. He began his schooling
+at Wanja and Kim Kindergarten, where his early character was shaped, before proceeding
+to Park Road Primary School. Later, he transferred to Makini School, a transition that
+marked his ability to adjust and thrive in new environments. David went on to attend
+Kanyakine High School, where he continued to grow intellectually and socially, before
+pursuing higher education at Methodist University. His academic journey was not merely
+about certificates, but about building the discipline and perspective.
+Professional Life
+Quick Connection
+Services
+Beginning his
+professional career
+with dedication and
+commitment to
+excellence
+United Telkom
+Contributing his skills
+in telecommunications
+and building lasting
+professional
+relationships
+ZOE
+Serving communities
+with thoughtfulness
+and quiet commitment
+Those who worked alongside him knew him as dependable, thoughtful, and quietly
+2 committed to excellence. He did not seek praise, but his work spoke for him.
+
+A Father's Love and
+Courageous Battle
+Above all, David was a father. He loved his children: Moses, Michael, Mitchell, and
+Abigael, with a depth that words can scarcely capture. They were his greatest joy and his
+strongest motivation. Even during difficult seasons, his thoughts were anchored on their
+future, their wellbeing, and the values he hoped to pass on to them: integrity, resilience,
+humility, and faith in God.
+Integrity
+Living with honesty and moral
+uprightness in all circumstances
+Humility
+Resilience
+Enduring hardship with remarkable
+strength and determination
+Serving others without seeking
+recognition or praise
+Faith
+Trusting in God through life's greatest
+challenges
+Five Years of Courage
+In 2020, David fell ill, beginning a long and
+courageous battle with sickness. For five years, he
+fought with remarkable endurance, demonstrating
+strength not just of body, but of spirit. Through
+pain, uncertainty, and exhaustion, he held on with
+courage that inspired everyone around him. On 9th
+December 2025, at 3:00 am, David peacefully rested,
+marking the end of his earthly journey and the
+beginning of eternal rest.
+David's life reminds us that strength is not always
+loud, and courage is not always dramatic.
+Sometimes, it is found in simply showing up each
+day, enduring quietly, and loving faithfully despite
+hardship. He leaves behind a legacy of
+perseverance, responsibility, and love, especially in
+the lives of his children, who will forever carry his
+name and values forward.
+
+4
+A Legacy That Lives On
+As we mourn his passing, we also give thanks for having known him. We thank God for
+the years we shared with David, for the lessons his life taught us, and for the memories
+that will remain alive in our hearts.
+A Life Well Lived
+May his soul rest in eternal peace, and may his family find comfort in knowing that
+David Ithali Mbiti lived a meaningful life and fought a good fight. His story does
+not end here; it lives on in all of us who loved him.
+2 Timothy 4:7
+"You have fought the good fight, you have finished
+the race, you have kept the faith."
+Sleep Well, David
+55
+In Our Hearts
+Forever remembered for his
+quiet strength, unwavering
+love, and the profound
+impact he made on all who
+knew him
+339
+In His Children
+His legacy continues
+through Moses, Michael,
+Mitchell, and Abigael, who
+carry forward his values
+and spirit
+&
+In Eternal Peace
+At rest now from his earthly
+struggles, embraced by
+God's eternal love and grace
