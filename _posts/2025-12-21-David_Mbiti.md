@@ -80,16 +80,19 @@ His academic journey was not merely about certificates, but about building the d
 
 <ul>
 <li> <span class="font-semibold"> Quick Connection Services </span>
-
+<div>
 Beginning his professional career with dedication and commitment to excellence
+</div>
 </li>
 <li> <span class="font-semibold"> United Telkom </span>
- 
+<div>
 Contributing his skills in telecommunications and building lasting professional relationships
+</div>
 </li>
 <li> <span class="font-semibold"> ZOE </span>
-
+<div>
 Serving communities with thoughtfulness and quiet commitment
+</div>
 </li>
 </ul>
 <p class='py-2'>
