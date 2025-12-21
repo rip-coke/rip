@@ -161,15 +161,18 @@ the lives of his children, who will forever carry his name and values forward.
 As we mourn his passing, we also give thanks for having known him. We thank God for the years we shared with David, for the lessons his life taught us, and for the memories that will remain alive in our hearts.
 </p>
 
+<blockquote class="text-xl italic font-semibold tracking-tight text-heading">
 A Life Well Lived
 
 May his soul rest in eternal peace, and may his family find comfort in knowing that David Ithali Mbiti lived a meaningful life and fought a good fight. His story does not end here; it lives on in all of us who loved him.
+</blockquote>
 
+<blockquote class="text-xl italic font-semibold tracking-tight text-heading">
 2 Timothy 4:7
 
 "You have fought the good fight, you have finished the race, you have kept the faith."
 Sleep Well, David
-
+</blockquote>
 <ul>
 <li> <i class="fas fa-heart"></i> In Our Hearts
 
