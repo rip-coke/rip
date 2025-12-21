@@ -1,7 +1,21 @@
-Celebrating the Life of
-David Ithali Mbiti
-8th November 1977 - 9th December 2025
-A beloved son, father, colleague, and friend
+---
+name: David Ithali Mbiti
+dob: 1977-11-08
+dod: 2025-12-09
+county: Meru
+pic: /assets/images/david_mbiti.jpg
+fb: 
+insta: 
+x: 
+user: 2
+layout: post
+comments: true
+header:
+  image: /assets/images/david_mbiti.jpg
+excerpt: David Ithali Mbiti (08 Nov 77 - 09 Dec 25)
+---
+
+Celebrating the Life of David Ithali Mbiti. A beloved son, father, colleague, and friend
 
 A Life of Dignity and Perseverance
 We gather here today with heavy hearts, yet with
