@@ -117,21 +117,25 @@ future, their wellbeing, and the values he hoped to pass on to them: integrity, 
 
 <ul>
 <li> <span class="font-semibold"> Integrity </span>
-
+<div>
 Living with honesty and moral uprightness in all circumstances
+</div>
 </li>
 <li> <span class="font-semibold"> Humility </span>
-
+<div>
 Serving others without seeking recognition or praise
+</div>
 </li>
 
 <li> <span class="font-semibold"> Resilience </span>
-
+<div>
 Enduring hardship with remarkable strength and determination
+</div>
 </li>  
 <li> <span class="font-semibold"> Faith </span>
-
+<div>
 Trusting in God through life's greatest challenges
+</div>
 </li>
 </ul>
 
@@ -179,19 +183,21 @@ Sleep Well, David
 
 <ul>
 <li> <i class="fas fa-heart"></i> <span class="font-semibold"> In Our Hearts </span>
-
+<div >
 Forever remembered for his quiet strength, unwavering love, and the profound impact he made on all who knew him
+</div>
 </li>
 <li> <i class="fa-solid fa-people-group"></i> <span class="font-semibold"> In His Children </span>
-
+<div>
 His legacy continues through Moses, Michael, Mitchell, and Abigael, who carry forward his values and spirit
+</div>
 </li>
 <li> <i class="fas fa-pray"></i> <span class="font-semibold"> In Eternal Peace </span>
-
+<div>
 At rest now from his earthly struggles, embraced by God's eternal love and grace
+</div>
 </li>
 </ul>
 
 </main>
-
 </div>
