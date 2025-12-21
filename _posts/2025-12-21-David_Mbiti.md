@@ -79,18 +79,18 @@ His academic journey was not merely about certificates, but about building the d
 <h1 id="prof" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">Professional Life</h1>
 
 <ul>
-- Quick Connection Services
+<li> Quick Connection Services
 
     Beginning his professional career with dedication and commitment to excellence
-
-- United Telkom
+</li>
+<li> United Telkom
  
     Contributing his skills in telecommunications and building lasting professional relationships
-
-- ZOE
+</li>
+<li> ZOE
 
     Serving communities with thoughtfulness and quiet commitment
-
+</li>
 </ul>
 <p class='py-2'>
 Those who worked alongside him knew him as dependable, thoughtful, and quietly 2 committed to excellence. 
@@ -115,22 +115,23 @@ future, their wellbeing, and the values he hoped to pass on to them: integrity, 
 </p>
 
 <ul>
-- Integrity
+<li> Integrity
 
     Living with honesty and moral uprightness in all circumstances
-
-- Humility
+</li>
+<li> Humility
 
     Serving others without seeking recognition or praise
-- Resilience
+</li>
+
+<li> Resilience
 
     Enduring hardship with remarkable strength and determination
-  
-- Faith
+</li>  
+<li> Faith
 
-    Trusting in God through life's greatest
-challenges
-
+    Trusting in God through life's greatest challenges
+</li>
 </ul>
 
 <h1 id="courage" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">Five Years of Courage</h1>
