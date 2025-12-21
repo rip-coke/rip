@@ -169,7 +169,7 @@ May his soul rest in eternal peace, and may his family find comfort in knowing t
 </blockquote>
 
 
-<div class="p-4 font-semibold italic">2 Timothy 4:7</div>
+<div class="p-8 font-semibold italic">2 Timothy 4:7</div>
 
 <blockquote class="text-xl italic font-semibold tracking-tight text-heading">
 
