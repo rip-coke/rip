@@ -137,7 +137,7 @@ David Ithali Mbiti lived a meaningful life and fought a good fight. His story do
 not end here; it lives on in all of us who loved him.
 </p>
 
-***2 Timothy 4:7****
+***2 Timothy 4:7***
 
 > "You have fought the good fight, you have finished the race, you have kept the faith."
 > **Sleep Well, David**
