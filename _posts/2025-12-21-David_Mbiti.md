@@ -78,6 +78,17 @@ His academic journey was not merely about certificates, but about building the d
 
 <h1 id="prof" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">Professional Life</h1>
 
+- Quick Connection Services
+
+    Beginning his professional career with dedication and commitment to excellence
+
+- United Telkom
+ 
+    Contributing his skills in telecommunications and building lasting professional relationships
+
+- ZOE
+
+    Serving communities with thoughtfulness and quiet commitment
 
 <p class='py-2'>
 Those who worked alongside him knew him as dependable, thoughtful, and quietly 2 committed to excellence. 
