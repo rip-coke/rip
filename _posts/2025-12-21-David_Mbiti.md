@@ -78,6 +78,7 @@ His academic journey was not merely about certificates, but about building the d
 
 <h1 id="prof" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">Professional Life</h1>
 
+<ul>
 - Quick Connection Services
 
     Beginning his professional career with dedication and commitment to excellence
@@ -90,6 +91,7 @@ His academic journey was not merely about certificates, but about building the d
 
     Serving communities with thoughtfulness and quiet commitment
 
+</ul>
 <p class='py-2'>
 Those who worked alongside him knew him as dependable, thoughtful, and quietly 2 committed to excellence. 
 </p>
@@ -112,6 +114,7 @@ strongest motivation. Even during difficult seasons, his thoughts were anchored 
 future, their wellbeing, and the values he hoped to pass on to them: integrity, resilience, humility, and faith in God.
 </p>
 
+<ul>
 - Integrity
 
     Living with honesty and moral uprightness in all circumstances
@@ -127,6 +130,9 @@ future, their wellbeing, and the values he hoped to pass on to them: integrity, 
 
     Trusting in God through life's greatest
 challenges
+
+</ul>
+
 <h1 id="courage" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">Five Years of Courage</h1>
 
 
@@ -162,18 +168,20 @@ As we mourn his passing, we also give thanks for having known him. We thank God 
 
 > "You have fought the good fight, you have finished the race, you have kept the faith."
 > **Sleep Well, David**
-
-- <i class="fas fa-heart"></i> In Our Hearts
+> 
+<ul>
+<li> <i class="fas fa-heart"></i> In Our Hearts
 
     Forever remembered for his quiet strength, unwavering love, and the profound impact he made on all who knew him
-  
-- <i class="fa-solid fa-family"></i> In His Children
+</li>
+<li> <i class="fa-solid fa-family"></i> In His Children
 
     His legacy continues through Moses, Michael, Mitchell, and Abigael, who carry forward his values and spirit
-
-- <i class="fas fa-pray"></i> In Eternal Peace
+</li>
+<li> <i class="fas fa-pray"></i> In Eternal Peace 
 
     At rest now from his earthly struggles, embraced by God's eternal love and grace
-
+</li>
+</ul>
 </main>
 </div>
