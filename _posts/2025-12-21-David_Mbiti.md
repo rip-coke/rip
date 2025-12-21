@@ -79,15 +79,15 @@ His academic journey was not merely about certificates, but about building the d
 <h1 id="prof" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">Professional Life</h1>
 
 <ul>
-<li> Quick Connection Services
+<li> <span class="font-semibold"> Quick Connection Services </span>
 
     Beginning his professional career with dedication and commitment to excellence
 </li>
-<li> United Telkom
+<li> <span class="font-semibold"> United Telkom </span>
  
     Contributing his skills in telecommunications and building lasting professional relationships
 </li>
-<li> ZOE
+<li> <span class="font-semibold"> ZOE </span>
 
     Serving communities with thoughtfulness and quiet commitment
 </li>
@@ -113,20 +113,20 @@ future, their wellbeing, and the values he hoped to pass on to them: integrity, 
 </p>
 
 <ul>
-<li> Integrity
+<li> <span class="font-semibold"> Integrity </span>
 
     Living with honesty and moral uprightness in all circumstances
 </li>
-<li> Humility
+<li> <span class="font-semibold"> Humility </span>
 
     Serving others without seeking recognition or praise
 </li>
 
-<li> Resilience
+<li> <span class="font-semibold"> Resilience </span>
 
     Enduring hardship with remarkable strength and determination
 </li>  
-<li> Faith
+<li> <span class="font-semibold"> Faith </span>
 
     Trusting in God through life's greatest challenges
 </li>
@@ -175,15 +175,15 @@ Sleep Well, David
 </blockquote>
 
 <ul>
-<li> <i class="fas fa-heart"></i> In Our Hearts
+<li> <i class="fas fa-heart"></i> <span class="font-semibold"> In Our Hearts </span>
 
     Forever remembered for his quiet strength, unwavering love, and the profound impact he made on all who knew him
 </li>
-<li> <i class="fa-solid fa-family"></i> In His Children
+<li> <i class="fa-solid fa-family"></i> <span class="font-semibold"> In His Children </span>
 
     His legacy continues through Moses, Michael, Mitchell, and Abigael, who carry forward his values and spirit
 </li>
-<li> <i class="fas fa-pray"></i> In Eternal Peace 
+<li> <i class="fas fa-pray"></i> <span class="font-semibold"> In Eternal Peace </span>
 
     At rest now from his earthly struggles, embraced by God's eternal love and grace
 </li>
