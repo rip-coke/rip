@@ -178,7 +178,9 @@ May his soul rest in eternal peace, and may his family find comfort in knowing t
 <blockquote class="text-xl italic font-semibold tracking-tight text-heading">
 
 "You have fought the good fight, you have finished the race, you have kept the faith."
+<div>
 Sleep Well, David
+</div>
 </blockquote>
 
 <ul>
@@ -198,6 +200,3 @@ At rest now from his earthly struggles, embraced by God's eternal love and grace
 </div>
 </li>
 </ul>
-
-</main>
-</div>
