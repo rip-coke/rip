@@ -112,6 +112,21 @@ strongest motivation. Even during difficult seasons, his thoughts were anchored 
 future, their wellbeing, and the values he hoped to pass on to them: integrity, resilience, humility, and faith in God.
 </p>
 
+- Integrity
+
+    Living with honesty and moral uprightness in all circumstances
+
+- Humility
+
+    Serving others without seeking recognition or praise
+- Resilience
+
+    Enduring hardship with remarkable strength and determination
+  
+- Faith
+
+    Trusting in God through life's greatest
+challenges
 <h1 id="courage" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">Five Years of Courage</h1>
 
 
