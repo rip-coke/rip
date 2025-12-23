@@ -4,9 +4,9 @@ dob: 1977-11-08
 dod: 2025-12-09
 county: Meru
 pic: /assets/images/david_mbiti.jpg
-fb: 
-insta: 
-x: 
+fb: https://www.facebook.com/share/p/17oWjgFqTY/
+insta: https://www.instagram.com/p/DSiF2_YAsr5/
+x: https://x.com/i/status/2003410120462746060/
 user: 2
 layout: post
 comments: true
