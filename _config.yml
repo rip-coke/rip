@@ -355,6 +355,7 @@ head_scripts:
   - https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js
   - https://js.paystack.co/v2/inline.js
   - https://unpkg.com/trix@2.1.15/dist/trix.umd.min.js
+  - /assets/js/facebook-pixel.js
 
 style_sheets:
   - https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css
