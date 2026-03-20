@@ -6,81 +6,81 @@ permalink: /trees
 ---
 
 <script type="module">
-    console.log('Paystack JavaScript loaded');
+  console.log('Paystack JavaScript loaded');
 
-    console.log("{{site.paystack_public_key}}");
+  console.log("{{site.paystack_public_key}}");
 
-    const popup = new PaystackPop();
-    const url = "<%= html_escape(home_verify_url('code')) %>"
-    const form = document.getElementById("treesForm");
-    const qty = document.getElementById('quantity');
-    const email = document.getElementById('email');
-    
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var data = new FormData(event.target);
+  const popup = new PaystackPop();
+  const url = "<%= html_escape(home_verify_url('code')) %>"
+  const form = document.getElementById("treesForm");
+  const qty = document.getElementById('quantity');
+  const email = document.getElementById('email');
 
-      var status = document.getElementById("formStatus");
 
-      // validate quantity is a number >= 1
-      const qtyVal = Number(qty?.value);
-      if (!Number.isFinite(qtyVal) || Number.isNaN(qtyVal) || qtyVal < 1) {
-        status.textContent = 'Please enter a valid quantity (a number ≥ 1).';
-        qty.classList.add('ring-2','ring-red-500');
-        qty.focus();
-        return;
-      }
-      // clear any previous error styling
-      qty.classList.remove('ring-2','ring-red-500');
-      
-      popup.newTransaction({
-          key: "{{site.paystack_public_key}}",
-          email: email.value,
-          amount: qtyVal * 40000,
-          onSuccess: (transaction) => {
-            data.append("transaction", JSON.stringify(transaction))
-            fetch(event.target.action, {
-              method: form.method,
-              body: data,
-              headers: {
-                  'Accept': 'application/json'
-              }
-            }).then(response => {
-              if (response.ok) {
-                status.innerHTML = `Thank you for choosing Rip.ke to commemorate your loved one. Reference code ${transaction.reference}`;
-                form.style.display="none"
-                function sleep(ms) { return new Promise(resolve => setTimeout(resolve, 1_000));}
-                window.location.assign(`/trees?ref=${transaction.reference}`)
-              } else {
-                response.json().then(data => {
-                  if (Object.hasOwn(data, 'errors')) {
-                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                  } else {
-                    status.innerHTML = "Oops! There was a problem submitting your form"
-                  }
-                })
-              }
-            }).catch(error => {
-              status.innerHTML = "Oops! There was a problem submitting your form"
-            });
-          console.log("Success: ", transaction);
-          },
-          onLoad: (response) => {
-          console.log("onLoad: ", response);
-          },
-          onCancel: () => {
-          console.log("onCancel");
-          },
-          onError: (error) => {
-          console.log("Error: ", error.message);
-          },
-          onClose: function(){
-          alert('Payment window closed');
-          }
-        });
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var data = new FormData(event.target);
+
+    var status = document.getElementById("formStatus");
+
+    // validate quantity is a number >= 1
+    const qtyVal = Number(qty?.value);
+    if (!Number.isFinite(qtyVal) || Number.isNaN(qtyVal) || qtyVal < 1) {
+      status.textContent = 'Please enter a valid quantity (a number ≥ 1).';
+      qty.classList.add('ring-2', 'ring-red-500');
+      qty.focus();
+      return;
     }
-    form.addEventListener("submit", handleSubmit)
+    // clear any previous error styling
+    qty.classList.remove('ring-2', 'ring-red-500');
+
+    popup.newTransaction({
+      key: "{{site.paystack_public_key}}",
+      email: email.value,
+      amount: qtyVal * 40000,
+      onSuccess: (transaction) => {
+        data.append("transaction", JSON.stringify(transaction))
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            status.innerHTML = `Thank you for choosing Rip.ke to commemorate your loved one. Reference code ${transaction.reference}`;
+            form.style.display = "none"
+            function sleep(ms) { return new Promise(resolve => setTimeout(resolve, 1_000)); }
+            window.location.assign(`/trees?ref=${transaction.reference}`)
+          } else {
+            response.json().then(data => {
+              if (Object.hasOwn(data, 'errors')) {
+                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+              } else {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+              }
+            })
+          }
+        }).catch(error => {
+          status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+        console.log("Success: ", transaction);
+      },
+      onLoad: (response) => {
+        console.log("onLoad: ", response);
+      },
+      onCancel: () => {
+        console.log("onCancel");
+      },
+      onError: (error) => {
+        console.log("Error: ", error.message);
+      },
+      onClose: function () {
+        alert('Payment window closed');
+      }
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
 </script>
 
 <div id="content" class="bg-white pb-6 sm:pb-6">
@@ -95,23 +95,21 @@ permalink: /trees
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label for="planted_by" class="block text-sm font-medium text-gray-700">Planted by</label>
-              <input id="planted_by" name="planted_by" type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="Your name or organisation">
+              <input id="planted_by" name="planted_by" type="text"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                placeholder="Your name or organisation">
             </div>
             <div>
               <label for="in_honour_of" class="block text-sm font-medium text-gray-700">In honour of</label>
-              <input id="in_honour_of" name="in_honour_of" type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="Name of honouree">
+              <input id="in_honour_of" name="in_honour_of" type="text"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                placeholder="Name of honouree">
             </div>
             <div class="sm:col-span-2">
               <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-              <input 
-                id="email" 
-                name="email" 
-                type="email"
-                required
-                pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
-                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" 
-                placeholder="Your email address"
-              >
+              <input id="email" name="email" type="email" required pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                placeholder="Your email address">
               <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid email address.</p>
             </div>
           </div>
@@ -130,56 +128,74 @@ permalink: /trees
           <div id="presetGroup" class="flex flex-wrap gap-3">
             <label class="cursor-pointer">
               <input type="radio" name="preset" value="4" class="sr-only preset-input" />
-              <span class="inline-block px-4 py-2 border rounded-md bg-white text-black border-gray-300 hover:bg-yellow-50 focus:outline-none preset-btn">4 trees</span>
+              <span
+                class="inline-block px-4 py-2 border rounded-md bg-white text-black border-gray-300 hover:bg-yellow-50 focus:outline-none preset-btn">4
+                trees</span>
             </label>
 
             <label class="cursor-pointer">
               <input type="radio" name="preset" value="10" class="sr-only preset-input" />
-              <span class="inline-block px-4 py-2 border rounded-md bg-white text-black border-gray-300 hover:bg-yellow-50 focus:outline-none preset-btn">10 trees</span>
+              <span
+                class="inline-block px-4 py-2 border rounded-md bg-white text-black border-gray-300 hover:bg-yellow-50 focus:outline-none preset-btn">10
+                trees</span>
             </label>
 
             <label class="cursor-pointer">
               <input type="radio" name="preset" value="100" class="sr-only preset-input" />
-              <span class="inline-block px-4 py-2 border rounded-md bg-white text-black border-gray-300 hover:bg-yellow-50 focus:outline-none preset-btn">100 trees</span>
+              <span
+                class="inline-block px-4 py-2 border rounded-md bg-white text-black border-gray-300 hover:bg-yellow-50 focus:outline-none preset-btn">100
+                trees</span>
             </label>
 
             <label class="cursor-pointer">
               <input type="radio" name="preset" value="custom" class="sr-only preset-input" />
-              <span class="inline-block px-4 py-2 border rounded-md bg-white text-black border-gray-300 hover:bg-yellow-50 focus:outline-none preset-btn">Custom</span>
+              <span
+                class="inline-block px-4 py-2 border rounded-md bg-white text-black border-gray-300 hover:bg-yellow-50 focus:outline-none preset-btn">Custom</span>
             </label>
           </div>
         </fieldset>
 
         <div>
           <label for="quantity" class="block text-sm font-medium text-gray-700 mb-2">Quantity</label>
-          <input id="quantity" name="quantity" type="number" min="1" step="1" value="" class="w-full max-w-xs px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" />
+          <input id="quantity" name="quantity" type="number" min="1" step="1" value=""
+            class="w-full max-w-xs px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" />
           <p class="text-sm text-gray-500 mt-2">Select a preset or choose "Custom" and enter any number.</p>
         </div>
 
         <div class="flex justify-center">
-          <button type="submit" class="px-6 py-2 bg-yellow-500 text-white font-semibold rounded-lg shadow hover:bg-yellow-600 transition-colors">
+          <button type="submit"
+            class="px-6 py-2 bg-yellow-500 text-white font-semibold rounded-lg shadow hover:bg-yellow-600 transition-colors">
             Submit
           </button>
         </div>
       </form>
 
-      <div class="flex justify-center">
-        <iframe 
-          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid08pgagxWer4snpsZtyG9j5aRn2kMAuoP2HigXQTcvCsvx2SUpbNCKbX6xTxyLMbxQl%26id%3D61580368161016&show_text=true&width=500" 
-          width="500" 
-          height="774" 
-          style="border:none;overflow:hidden" 
-          scrolling="no" 
-          frameborder="0" 
-          allowfullscreen="true" 
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-        ></iframe>
-      </div>
+      
+      
 
       <!-- Planting history section -->
       <section class="mt-8 bg-gray-50 rounded-lg border border-gray-200 p-6">
-        <h2 class="text-xl font-semibold text-gray-800 mb-4">Long rains (March) planting 2026</h2>
-        <ul class="list-disc list-inside mt-2 text-sm text-gray-600">
+        
+
+        <h2 class="text-lg font-medium text-gray-900 m-2">Past Tree Planting Ceremonies</h2>
+          <h2 class="text-xl font-semibold text-gray-800 mb-4">Short rains (October) planting 2026</h2>
+              <ul class="list-disc list-inside mt-2 text-sm text-gray-600">
+                <li> </li>
+              </ul>
+
+        <div class="space-y-4">
+          <div class="p-4 bg-white border rounded">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Long rains (March) planting 2026</h2>
+            
+            <div class="p-6 flex justify-center">
+              <iframe
+                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02sb1YQ37Y7jWYz5dkwtgVa9d5gdQ8PoHv29kpUPg7xVLpKZ8zfNp1fzdA8CwVxCzMl%26id%3D61580368161016&show_text=true&width=500"
+                width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+
+            <ul class="list-disc list-inside mt-2 text-sm text-gray-600">
               <li> Walter Odhiambo Onyango by Family and Friends </li>
               <li>
                 David Ithali Mbiti honored by Komnyaz
@@ -191,22 +207,27 @@ permalink: /trees
                 Fredrick Mang’ana Ndubi honored by Family and Friends
               </li>
             </ul>
-
-        <h2 class="text-lg font-medium text-gray-900 m-2">Past Tree Planting Ceremonies</h2>
-
-        <div class="space-y-4">
+          </div>
           <div class="p-4 bg-white border rounded">
             <h3 class="text-sm font-semibold text-gray-800">Short rains (October) planting 2025</h3>
+
+            <div class="p-6 flex justify-center">
+              <iframe
+                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid08pgagxWer4snpsZtyG9j5aRn2kMAuoP2HigXQTcvCsvx2SUpbNCKbX6xTxyLMbxQl%26id%3D61580368161016&show_text=true&width=500"
+                width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+
             <ul class="list-disc list-inside mt-2 text-sm text-gray-600">
               <li>
-                <a href="https://www.instagram.com/p/DQo71AgjHRU/" target="_blank" class="hover:text-yellow-500 hover:underline">
+                <a href="https://www.instagram.com/p/DQo71AgjHRU/" target="_blank"
+                  class="hover:text-yellow-500 hover:underline">
                   Richard Muia honored by Isha Volunteers Ireland
                 </a>
               </li>
             </ul>
           </div>
-
-          <!-- add more past events here if needed -->
         </div>
       </section>
 
@@ -215,54 +236,54 @@ permalink: /trees
 </div>
 
 <script>
-  (function(){
-    const presets = Array.from(document.querySelectorAll('.preset-input'));
-    const presetBtns = document.querySelectorAll('.preset-btn');
-    const qty = document.getElementById('quantity');
-    const plantedInput = document.getElementById('planted_by');
-    const honourInput = document.getElementById('in_honour_of');
-    const plantedPreview = document.getElementById('plantedPreview');
-    const honourPreview = document.getElementById('honourPreview');
+    (function () {
+      const presets = Array.from(document.querySelectorAll('.preset-input'));
+      const presetBtns = document.querySelectorAll('.preset-btn');
+      const qty = document.getElementById('quantity');
+      const plantedInput = document.getElementById('planted_by');
+      const honourInput = document.getElementById('in_honour_of');
+      const plantedPreview = document.getElementById('plantedPreview');
+      const honourPreview = document.getElementById('honourPreview');
 
-    function clearActive() {
-      presetBtns.forEach(b => b.classList.remove('ring-2','ring-yellow-400','bg-yellow-50','border-yellow-400'));
-    }
+      function clearActive() {
+        presetBtns.forEach(b => b.classList.remove('ring-2', 'ring-yellow-400', 'bg-yellow-50', 'border-yellow-400'));
+      }
 
-    // update live sentence preview when inputs change
-    function updatePreview(){
-      plantedPreview.textContent = (plantedInput && plantedInput.value.trim()) ? plantedInput.value.trim() : '[planter]';
-      honourPreview.textContent = (honourInput && honourInput.value.trim()) ? honourInput.value.trim() : '[name]';
-    }
-    plantedInput?.addEventListener('input', updatePreview);
-    honourInput?.addEventListener('input', updatePreview);
-    updatePreview();
+      // update live sentence preview when inputs change
+      function updatePreview() {
+        plantedPreview.textContent = (plantedInput && plantedInput.value.trim()) ? plantedInput.value.trim() : '[planter]';
+        honourPreview.textContent = (honourInput && honourInput.value.trim()) ? honourInput.value.trim() : '[name]';
+      }
+      plantedInput?.addEventListener('input', updatePreview);
+      honourInput?.addEventListener('input', updatePreview);
+      updatePreview();
 
-    // when a preset is selected, populate the input
-    presets.forEach((r, i) => {
-      r.addEventListener('change', () => {
-        clearActive();
-        presetBtns[i].classList.add('ring-2','ring-yellow-400','bg-yellow-50','border-yellow-400');
-        if (r.value === 'custom') {
-          qty.value = '100';
-          qty.focus();
-        } else {
-          qty.value = r.value;
-        }
+      // when a preset is selected, populate the input
+      presets.forEach((r, i) => {
+        r.addEventListener('change', () => {
+          clearActive();
+          presetBtns[i].classList.add('ring-2', 'ring-yellow-400', 'bg-yellow-50', 'border-yellow-400');
+          if (r.value === 'custom') {
+            qty.value = '100';
+            qty.focus();
+          } else {
+            qty.value = r.value;
+          }
+        });
       });
-    });
 
-    // make clicking the visible span toggle the radio (for browsers that don't link label correctly)
-    presetBtns.forEach((btn, idx) => {
-      btn.addEventListener('click', () => {
-        presets[idx].checked = true;
-        presets[idx].dispatchEvent(new Event('change'));
+      // make clicking the visible span toggle the radio (for browsers that don't link label correctly)
+      presetBtns.forEach((btn, idx) => {
+        btn.addEventListener('click', () => {
+          presets[idx].checked = true;
+          presets[idx].dispatchEvent(new Event('change'));
+        });
       });
-    });
 
-    // initialize: select first preset (4) and populate
-    if (presets.length) {
-      presets[0].checked = true;
-      presets[0].dispatchEvent(new Event('change'));
-    }
-  })();
+      // initialize: select first preset (4) and populate
+      if (presets.length) {
+        presets[0].checked = true;
+        presets[0].dispatchEvent(new Event('change'));
+      }
+    })();
 </script>
