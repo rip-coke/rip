@@ -85,12 +85,17 @@ layout: archive-post
               </a>
             </section>
             <!-- Tabs: Details / Notes (Notes has a scrollable window) -->
-            <div class="mt-6">
-              <div class="">
+            <div>
+              <div>
                 <nav class="-mb-px flex space-x-4" aria-label="Tabs">
-                  <button id="tab-notes-btn" class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600" aria-selected="false">Obituary</button>
-                  <button id="tab-details-btn" class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600" aria-controls="tab-details" aria-selected="true">Condolences</button>
+                  <button id="tab-notes-btn" class="w-full px-4 py-2 mt-5 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600" aria-selected="false">Obituary</button>
+                  <button id="tab-details-btn" class="w-full px-4 py-2 mt-5 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600" aria-controls="tab-details" aria-selected="true">Condolences</button>
                 </nav>
+                {% if page.links %}
+                  <nav class="-mb-px flex space-x-4" aria-label="Tabs">
+                    <button id="tab-links-btn" class="w-full px-4 py-2 mt-5 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600" aria-controls="links-details" aria-selected="true">Links</button>
+                  </nav>
+                {% endif %}
               </div>
 
               <div id="tab-details" class="mt-4 flex flex-col h-screen overflow-hidden hidden">
@@ -119,6 +124,20 @@ layout: archive-post
                 <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
                   
                   {{ page.content }}
+                </p>
+              </div>
+
+              <div id="tab-links"  class="group relative">
+                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                  
+                  {% for link in page.links %}
+                    <div class="py-2">
+                      <a target="_blank" class="text-yellow-700 dark:text-yellow-700 underline" href="{{link.href}}">
+                        <i class="fas fa-link" aria-hidden="true"></i>
+                        {{link.name}}
+                      </a>
+                    </div>
+                  {% endfor %}
                 </p>
               </div>
               

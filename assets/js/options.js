@@ -69,31 +69,51 @@
 })();
 
 (function(){
+  const linksBtn = document.getElementById('tab-links-btn');
   const detailsBtn = document.getElementById('tab-details-btn');
   const notesBtn = document.getElementById('tab-notes-btn');
   const details = document.getElementById('tab-details');
+  const links = document.getElementById('tab-links');
   const notes = document.getElementById('tab-notes');
 
   function showDetails(){
     details.classList.remove('hidden');
     notes.classList.add('hidden');
+    links.classList.add('hidden');
     detailsBtn.classList.add('border-yellow-500','text-gray-900');
     notesBtn.classList.remove('border-yellow-500','text-gray-900');
+    linksBtn.classList.remove('border-yellow-500','text-gray-900');
     detailsBtn.setAttribute('aria-selected','true');
     notesBtn.setAttribute('aria-selected','false');
+    linksBtn.setAttribute('aria-selected','false');
   }
   function showNotes(){
     notes.classList.remove('hidden');
     details.classList.add('hidden');
+    links.classList.add('hidden');
     notesBtn.classList.add('border-yellow-500','text-gray-900');
     detailsBtn.classList.remove('border-yellow-500','text-gray-900');
+    linksBtn.classList.remove('border-yellow-500','text-gray-900');
     notesBtn.setAttribute('aria-selected','true');
     detailsBtn.setAttribute('aria-selected','false');
+    linksBtn.setAttribute('aria-selected','false');
+  }
+  function showLinks(){
+    links.classList.remove('hidden');
+    notes.classList.add('hidden');
+    details.classList.add('hidden');
+    linksBtn.classList.add('border-yellow-500','text-gray-900');
+    detailsBtn.classList.remove('border-yellow-500','text-gray-900');
+    notesBtn.classList.remove('border-yellow-500','text-gray-900');
+    linksBtn.setAttribute('aria-selected','true');
+    detailsBtn.setAttribute('aria-selected','false');
+    notesBtn.setAttribute('aria-selected','false');
   }
 
   if (detailsBtn) {
     detailsBtn.addEventListener('click', showDetails);
-  notesBtn.addEventListener('click', showNotes);
+    notesBtn.addEventListener('click', showNotes);
+    linksBtn.addEventListener('click', showLinks);
   }
 })();
 

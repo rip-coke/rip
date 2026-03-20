@@ -7,6 +7,11 @@ pic: /assets/images/walter_onyango.jpg
 fb: 
 insta: 
 x: 
+links:
+  - name: Funeral Service
+    href: https://www.youtube.com/live/SR0rqdOkIv4
+  - name: Burial Service
+    href: https://www.youtube.com/live/XDtaCh-LU6o
 user: 2
 layout: post
 comments: true
