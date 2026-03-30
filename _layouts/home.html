@@ -13,26 +13,46 @@ comments: true
 
 <div class="relative w-full">
   <div class="swiper swiper-container">
-    <div class="swiper-wrapper">  
+    <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/remember.png" alt="" class="md:h-[350px] h-[120px] w-full">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/remember.png" alt=""
+          class="md:h-[350px] h-[120px] w-full">
       </div>
       <div class="swiper-slide">
-        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/honour.png" alt="" class="md:h-[350px] h-[120px] w-full">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/honour.png" alt=""
+          class="md:h-[350px] h-[120px] w-full">
       </div>
       <div class="swiper-slide">
-        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/celebrate.png" alt="" class="md:h-[350px] h-[120px] w-full">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/celebrate.png" alt=""
+          class="md:h-[350px] h-[120px] w-full">
       </div>
     </div>
+  </div>
+</div>
+
+<div class="flex items-center gap-x-4 lg:hidden">
+  <div class="flex-auto">
+    <a href="/post/">
+      <button
+        class="w-full px-4 py-2 mt-2 font-medium tracking-wide  capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600">
+        Post Obituary
+      </button>
+    </a>
+  </div>
+  <div class="flex-auto">
+    <a href="/trees/">
+      <button
+        class="w-full px-4 py-2 mt-2 font-medium tracking-wide  capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600">
+        Plant Trees
+      </button>
+    </a>
   </div>
 </div>
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
   <div class="mx-auto mt-3 grid max-w-2xl grid-cols-1 gap-x-4 gap-y-4 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-    
     {% include documents-collection.html entries=posts type=entries_layout %}
-    
   </div>
 </div>
 
@@ -48,5 +68,3 @@ comments: true
     </p>
   {% endif %}
 {% endif %}
-
-
