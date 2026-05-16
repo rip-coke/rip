@@ -15,7 +15,7 @@ layout: post
 comments: true
 header:
   image: /assets/images/Ronald_Kiboro.jpg
-excerpt: Ronald Karomo Kiboro (01 Jan 1948 - 05 Dec 2026)
+excerpt: Ronald Karomo Kiboro (01 Jan 1948 - 04 May 2026)
 ---
 <div class="sticky top-0 z-50">
         <label for="tabs" class="sr-only">Select your section</label>
