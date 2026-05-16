@@ -3,21 +3,19 @@ name: Ronald Karomo Kiboro
 dob: 1948-01-01
 dod: 2026-05-04
 county: Nairobi
-pic: /assets/images/ronald_kiboro.jpg
+pic: /assets/images/Ronald_Kiboro.jpg
 fb: 
 insta: 
 x: 
 links:
-  - name: Funeral Service
-    href: https://www.youtube.com/live/SR0rqdOkIv4
   - name: Burial Service
-    href: https://www.youtube.com/live/XDtaCh-LU6o
+    href: https://www.youtube.com/live/rYyiSpMl8aQ
 user: 2
 layout: post
 comments: true
 header:
-  image: /assets/images/walter_onyango.jpg
-excerpt: Walter Odhiambo Onyango (11 Mar 76 - 24 Dec 25)
+  image: /assets/images/Ronald_Kiboro.jpg
+excerpt: Ronald Karomo Kiboro (01 Jan 1948 - 05 Dec 2026)
 ---
 <div class="sticky top-0 z-50">
         <label for="tabs" class="sr-only">Select your section</label>
