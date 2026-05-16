@@ -137,8 +137,6 @@ I am so glad that you got yourself surrounded with people and lots of love. If I
 - Alice Mumbi Kiboro
 </blockquote>
 
-</p>
-
 <h1 id="daughter" class="font-playfair pt-6 mb-4 text-2xl font-extrabold leading-none text-gray-900 md:text-3xl lg:text-4xl dark:text-black">Daughter's Tribute</h1>
 
 <p class='py-2'>
