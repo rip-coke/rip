@@ -2,7 +2,7 @@
 name: Ziporah Ruguru Gitonga
 dob: 1946-01-01
 dod: 2026-04-29
-county: Nairobi
+county: Meru
 pic: /assets/images/Ziporah_Gitonga.jpg
 fb: 
 insta: 
