@@ -110,11 +110,9 @@
     notesBtn.setAttribute('aria-selected','false');
   }
 
-  if (detailsBtn) {
-    detailsBtn.addEventListener('click', showDetails);
-    notesBtn.addEventListener('click', showNotes);
-    linksBtn.addEventListener('click', showLinks);
-  }
+  detailsBtn?.addEventListener('click', showDetails);
+  notesBtn?.addEventListener('click', showNotes);
+  linksBtn?.addEventListener('click', showLinks);
 })();
 
 var swiper = new Swiper('.swiper-container', {
