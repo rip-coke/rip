@@ -173,11 +173,15 @@ permalink: /trees
       <section class="mt-10 rounded-lg border-2 border-yellow-300 bg-yellow-50 p-6">
         <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
           <h2 class="text-xl font-semibold text-gray-900">Short rains (November) planting 2026</h2>
-          <span class="inline-flex items-center rounded-full bg-yellow-500 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">Latest</span>
+          <span
+            class="inline-flex items-center rounded-full bg-yellow-500 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">Latest</span>
         </div>
         <p class="text-sm text-gray-600 mb-4">Trees being planted this season in honour of:</p>
         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {% assign current_honourees = "David Hutcheson|Patricia Hutcheson;Margaret O'neil|Tracy O'neil;Ronald Karomo Kiboro|Family and Friends;Ziporah Ruguru Gitonga|Family and Friends;Walter Odhiambo Onyango|Family and Friends;David Ithali Mbiti|Komnyaz;Richard Muia|Family and Friends;Fredrick Mang’ana Ndubi|Family and Friends" | split: ";" %}
+          {% assign current_honourees = "David Hutcheson|Patricia Hutcheson;Margaret O'neil|Tracy O'neil;Ronald Karomo
+          Kiboro|Family and Friends;Ziporah Ruguru Gitonga|Family and Friends;Walter Odhiambo Onyango|Family and
+          Friends;David Ithali Mbiti|Komnyaz;Richard Muia|Family and Friends;Fredrick Mang’ana Ndubi|Family and Friends"
+          | split: ";" %}
           {% for entry in current_honourees %}
           {% assign parts = entry | split: "|" %}
           <li class="flex items-start gap-3 rounded-md bg-white border border-yellow-200 p-3">
@@ -189,26 +193,38 @@ permalink: /trees
           </li>
           {% endfor %}
         </ul>
+        <div class="mt-6 flex justify-center overflow-hidden">
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02B6UmhRWTahJbY5c2rikfSvdJXANCCZt5v2fzDgd5sX56aPm76mz21LTEkUnBAF7hl%26id%3D100012323973948&show_text=true&width=500"
+            width="500" height="652" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
       </section>
 
       <!-- Past plantings -->
       <section class="mt-10">
-        <h2 class="text-xl font-semibold text-gray-900 mb-4 border-b border-gray-200 pb-2">Past Tree Planting Ceremonies</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mb-4 border-b border-gray-200 pb-2">Past Tree Planting Ceremonies
+        </h2>
 
         <div class="space-y-6">
           <article class="rounded-lg border border-gray-200 bg-gray-50 p-6">
             <h3 class="text-lg font-semibold text-gray-800 mb-3">Long rains (March) planting 2026</h3>
             <ul class="space-y-1 text-sm text-gray-700 mb-4">
-              <li><i class="fa-solid fa-tree text-green-700 mr-2" aria-hidden="true"></i>Walter Odhiambo Onyango honoured by Family and Friends</li>
-              <li><i class="fa-solid fa-tree text-green-700 mr-2" aria-hidden="true"></i>David Ithali Mbiti honoured by Komnyaz</li>
-              <li><i class="fa-solid fa-tree text-green-700 mr-2" aria-hidden="true"></i>Richard Muia honoured by Family and Friends</li>
-              <li><i class="fa-solid fa-tree text-green-700 mr-2" aria-hidden="true"></i>Fredrick Mang’ana Ndubi honoured by Family and Friends</li>
+              <li><i class="fa-solid fa-tree text-green-700 mr-2" aria-hidden="true"></i>Walter Odhiambo Onyango
+                honoured by Family and Friends</li>
+              <li><i class="fa-solid fa-tree text-green-700 mr-2" aria-hidden="true"></i>David Ithali Mbiti honoured by
+                Komnyaz</li>
+              <li><i class="fa-solid fa-tree text-green-700 mr-2" aria-hidden="true"></i>Richard Muia honoured by Family
+                and Friends</li>
+              <li><i class="fa-solid fa-tree text-green-700 mr-2" aria-hidden="true"></i>Fredrick Mang’ana Ndubi
+                honoured by Family and Friends</li>
             </ul>
             <div class="flex justify-center overflow-hidden">
               <iframe
                 src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02sb1YQ37Y7jWYz5dkwtgVa9d5gdQ8PoHv29kpUPg7xVLpKZ8zfNp1fzdA8CwVxCzMl%26id%3D61580368161016&show_text=true&width=500"
-                width="500" height="800" class="w-full max-w-[500px] rounded" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                allowfullscreen="true" loading="lazy"
+                width="500" height="800" class="w-full max-w-[500px] rounded" style="border:none;overflow:hidden"
+                scrolling="no" frameborder="0" allowfullscreen="true" loading="lazy"
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
           </article>
@@ -217,15 +233,16 @@ permalink: /trees
             <h3 class="text-lg font-semibold text-gray-800 mb-3">Short rains (October) planting 2025</h3>
             <ul class="space-y-1 text-sm text-gray-700 mb-4">
               <li>
-                <i class="fa-solid fa-tree text-green-700 mr-2" aria-hidden="true"></i><a href="https://www.instagram.com/p/DQo71AgjHRU/" target="_blank" rel="noopener"
+                <i class="fa-solid fa-tree text-green-700 mr-2" aria-hidden="true"></i><a
+                  href="https://www.instagram.com/p/DQo71AgjHRU/" target="_blank" rel="noopener"
                   class="hover:text-yellow-600 hover:underline">Richard Muia honoured by Isha Volunteers Ireland</a>
               </li>
             </ul>
             <div class="flex justify-center overflow-hidden">
               <iframe
                 src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid08pgagxWer4snpsZtyG9j5aRn2kMAuoP2HigXQTcvCsvx2SUpbNCKbX6xTxyLMbxQl%26id%3D61580368161016&show_text=true&width=500"
-                width="500" height="800" class="w-full max-w-[500px] rounded" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                allowfullscreen="true" loading="lazy"
+                width="500" height="800" class="w-full max-w-[500px] rounded" style="border:none;overflow:hidden"
+                scrolling="no" frameborder="0" allowfullscreen="true" loading="lazy"
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
           </article>
